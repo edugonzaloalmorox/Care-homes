@@ -1,0 +1,26 @@
+---
+title: "Market entry in the care homes market"
+author: "Edu Gonzalo Almorox"
+date: "27 September 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+## Institutional context: the market for care homes 
+
+## Data and Variables 
+
+## Empirical model  
+
+### Identification strategy
+
+## Results 
+
+## Discussion
+
+## Conclusion
