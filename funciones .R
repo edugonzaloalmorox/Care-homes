@@ -6,3 +6,4 @@ clean <- function(dta){
   dta = str_trim(dta, side = "both")
   return(dta)
 }
+
