@@ -5,4 +5,4 @@
 # author: Edu Gonzalo (Newcastle University)
 # ------------------------------------------
 
-# This script contains the 
+# This script contains the information associated with the 
