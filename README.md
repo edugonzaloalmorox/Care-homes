@@ -4,10 +4,11 @@ This repository shows the data analysis for dealing with data referred to care h
 
 ### Data
 
-This folder contains the raw data. It is obtained from the Care Quality Commission Strategy & Intelligence Directorate upon request. This dataset is allocated in `/raw` and should be considered as read only.
+This folder contains the raw data. It is obtained from the Care Quality Commission Strategy & Intelligence Directorate upon request. This dataset is allocated in:
 
-`/processed` contains transformed data that has been manipulated. 
-
+  - `/raw` and should be considered as read only.
+  - `/processed` contains transformed data that has been manipulated. 
+  
 
 ### Doc
 
