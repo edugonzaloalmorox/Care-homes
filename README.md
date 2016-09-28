@@ -23,8 +23,12 @@ Results of the analysis in terms of datasets, figures and/or tables.
 
 Contains scripts with different types of analysis.
 
+   - `funciones`: List of functions used for the analysis. 
    - `cqc_data`: Cleans the data of the cqc dataset. It makes names of variables easier to manipulate.
    - `entries_exits_cqc`: It calculates the entries and exits associated with the CQC. It differentiates between _de novo_ entries and spurious entries. 
+   - `l&b_registry`: Cleans data from Laing and Buisson dataset, recodes and selects important variables. 
+   - `link_cqc_lb`: Analysis for matching data from CQC and L&B datasets. 
+   
 
 
 
