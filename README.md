@@ -1,6 +1,6 @@
 # Care homes
 
-This repository shows the data analysis for dealing with data referred to care homes in UK. It contains various types of folders that include the following 
+This repository shows the data analysis for dealing with data referred to care homes in UK. It contains various types of folders that include _Data_, _Doc_, _Output_ and _R_
 
 ### Data
 
