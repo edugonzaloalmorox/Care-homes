@@ -1,5 +1,5 @@
-# functions for data handling
-# --------------------------
+# functions for data management
+# -----------------------------
 
 
 # rename variables of the dataset 
@@ -22,7 +22,18 @@
         return(dta)
       }
 
-
+# matching words for creating a key variable
+      key = function(dta){
+        
+        nombres = dta %>% select(name1, name2)
+        
+        nombres$key <- apply(nombres,1,function(x) 
+          paste(Reduce(intersect, strsplit(x, " ")), collapse = " "))
+        nombres = nombres %>% select(key.2)
+        dta = cbind(dta, nombres)
+        return(dta)
+      }
+      
 # recoding missing information associated with variables 
       
       recode.missing <- function(dta, g1, g2, a){
