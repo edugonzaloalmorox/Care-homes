@@ -54,7 +54,7 @@ cqc = cqc %>% mutate(postcode = str_replace_all(postal.code,  pattern = "[[:punc
 # Collapse two outward and inward postcode in both datasets 
 
 # CQC data 
-cqc$postcode2 = with(cqc, str_replace_all(postal.code, "[[:blank:]]", ""))
+cqc$postcode2 = with(cqc, str_replace_all(postcode, "[[:blank:]]", ""))
 
 # Geographical data    
 coords$post2 = with(coords, str_replace_all(pcd, "[[:blank:]]", ""))
@@ -86,6 +86,7 @@ ch.geo.cqc = coords %>% filter(post2 %in% cqc_geo.post2)
 write.csv(ch.geo.cqc, "geo.ch.postcodes.csv", row.names = FALSE) # uniquely postcodes are geolocated 
 
 geo_cqc = import("geo.ch.postcodes.csv")
+cqc = import("cqc.entries.csv")
 
 
 # link to cqc information
