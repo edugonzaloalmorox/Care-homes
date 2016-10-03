@@ -29,7 +29,6 @@ Contains scripts with different types of analysis.
    - `l&b_registry`: Cleans data from Laing and Buisson dataset, recodes and selects important variables. 
    - `link_cqc_lb`: Analysis for matching data from CQC and L&B datasets.
    - `link_geographical_cqc`: Link information from the CQC and the ONS geographical directory. 
-   
-
+   -`cqc_house_prices`: Information regarding the _price paid_ data from the Land Registry. It also geolocates it transaction with data from the ONS Directory. 
 
 
