@@ -73,7 +73,7 @@ prices = prices %>% select( -item, -date.1)
                 coords$post2 = with(coords, str_replace_all(pcd, "[[:blank:]]", ""))
                 prices2010$post2 = with(prices2010, str_replace_all(postcode, "[[:blank:]]", ""))
                 
-            # drop observations where there is not postcode and where there is not geographical information.  
+            # drop observations where there is not postcode ( " ") and where there is not geographical information.  
              
                 # I do this first with the prices.2010 datast 
                 posts = unique(prices2010.clean$post2)
@@ -87,12 +87,56 @@ prices = prices %>% select( -item, -date.1)
                 prices2010.clean = prices2010 %>% filter(!(post2 %in% apestados))
                 
                 
-              write.csv(coords.trans, "house.transactions.geolocated.csv", row.names = FALSE)
-              
+            
               geo.house.prices = left_join(prices2010.clean, coords.trans, by = "post2")
               
-              write.csv(geo.house.prices, "house.transactions.geolocated.csv", row.names = FALSE)
+              write.csv(geo.house.prices, "house.transactions.geolocated.csv", row.names = FALSE) # house prices that are geolocated 
+              
                 
-                
+# -----------------------------------
+# Select variables for the analysis #   
+# -----------------------------------
+              
+          # Select the variables that I am going to include in the CQC 
+              house.prices = geo.house.prices %>% select(trans.date, price, postcode, post2, city, lsoa11, msoa11, oa11, imd, long, lat)
+              
+              # Get average prices per year and LSOA, MSOA, OA 
+              
+              house.prices$year.trans = format(as.Date(house.prices$trans.date, "%m/%d/%Y %H:%M"), "%Y")
+              
+             
+              # LSOA level 
+              # --------
+                      year.house.prices.lsoa = house.prices %>% group_by(lsoa11, year.trans) %>% 
+                        summarise (mean_price= mean(price), max_price = max(price), min_price = min(price), n.transactions = n()) %>% arrange(lsoa11, year.trans)
+                      
+                      # checks
+                      # --- 
+                      check = house.prices %>% filter(lsoa11 == " ")
+                      # WF17 1AA postcode no longer in use : drop it  
+                      # ---------
+                      
+                      year.house.prices.lsoa = year.house.prices.lsoa %>% filter(lsoa11 != " ")
+                      
+                      write.csv(year.house.prices.lsoa, "year.house.prices.lsoa.csv", row.names = FALSE) # mean house prices per year and LSOA
+                      
+              # MSOA level 
+              # --------
+                      
+                      year.house.prices.msoa = house.prices %>% group_by(msoa11, year.trans) %>% 
+                        summarise (mean_price= mean(price), max_price = max(price), min_price = min(price), n.transactions = n()) %>% arrange(msoa11, year.trans)
+                      
+                      
+                      year.house.prices.msoa = year.house.prices.msoa %>% filter(msoa11 != " ")
+              
+                      write.csv(year.house.prices.msoa, "year.house.prices.msoa.csv", row.names = FALSE) # mean house prices per year and MSOA
+              
+              
+              
+              
+              
+              
+              
+              
               
                 
