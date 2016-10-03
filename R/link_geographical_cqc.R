@@ -102,7 +102,7 @@ setdiff(cqc.postcodes, geo.postcodes)
 
 
 
-write.csv(cqc, "cqc.geolocated.csv", row.names = FALSE) # cqc dataset with geographic information
+write.csv(cqc.geolocat, "cqc.geolocated.csv", row.names = FALSE) # cqc dataset with geographic information
 
 
 
