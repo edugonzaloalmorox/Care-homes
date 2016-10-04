@@ -7,7 +7,9 @@
 
 # Idea: link house prices to information associated with geographical registry
 #       link throughout postal codes and LSOA and MSOA codes
+#       create house prices at LSOA and MSOA level
 #       use geolocated CQC dataset and data from the Land Registry
+#       
 # -------------------------------------------------------------------------------------------------------------------------
 
 
@@ -76,6 +78,7 @@ prices = prices %>% select( -item, -date.1)
             # drop observations where there is not postcode ( " ") and where there is not geographical information.  
              
                 # I do this first with the prices.2010 datast 
+                
                 posts = unique(prices2010.clean$post2)
 
                 post.coords = with(coords, unique(post2))
@@ -98,7 +101,9 @@ prices = prices %>% select( -item, -date.1)
 # -----------------------------------
               
           # Select the variables that I am going to include in the CQC 
-              house.prices = geo.house.prices %>% select(trans.date, price, postcode, post2, city, lsoa11, msoa11, oa11, imd, long, lat)
+              
+              house.prices = geo.house.prices %>% select(trans.date, price, postcode, post2, city, lsoa11, 
+                                                         msoa11, oa11, imd, long, lat)
               
               # Get average prices per year and LSOA, MSOA, OA 
               
@@ -107,21 +112,23 @@ prices = prices %>% select( -item, -date.1)
              
               # LSOA level 
               # --------
-                      year.house.prices.lsoa = house.prices %>% group_by(lsoa11, year.trans) %>% 
+                      
+              year.house.prices.lsoa = house.prices %>% group_by(lsoa11, year.trans) %>% 
                         summarise (mean_price= mean(price), max_price = max(price), min_price = min(price), n.transactions = n()) %>% arrange(lsoa11, year.trans)
                       
                       # checks
-                      # --- 
+                      # .............................................
                       check = house.prices %>% filter(lsoa11 == " ")
                       # WF17 1AA postcode no longer in use : drop it  
-                      # ---------
+                      
+                      # .............................................
                       
                       year.house.prices.lsoa = year.house.prices.lsoa %>% filter(lsoa11 != " ")
                       
                       write.csv(year.house.prices.lsoa, "year.house.prices.lsoa.csv", row.names = FALSE) # mean house prices per year and LSOA
                       
               # MSOA level 
-              # --------
+              # ----------
                       
                       year.house.prices.msoa = house.prices %>% group_by(msoa11, year.trans) %>% 
                         summarise (mean_price= mean(price), max_price = max(price), min_price = min(price), n.transactions = n()) %>% arrange(msoa11, year.trans)
@@ -131,10 +138,42 @@ prices = prices %>% select( -item, -date.1)
               
                       write.csv(year.house.prices.msoa, "year.house.prices.msoa.csv", row.names = FALSE) # mean house prices per year and MSOA
               
-              
-              
-              
-              
+# --------------------------              
+# Link CQC and house prices           
+# -------------------------- 
+            # I use CQC geolocated 
+            # I create two datasets; one with LSOA and MSOA levels
+                      
+    # Load datasets
+                      cqc = import("cqc.geolocated.csv")  # this is the cqc geolocated (use this dataset as a reference for other issues)
+                      house.prices.lsoa = import("year.house.prices.lsoa.csv")  
+                      house.prices.msoa = import("year.house.prices.msoa.csv")              
+                                                  
+    
+      # Extract the year in CQC 
+      #             This is referred to the time span of each period (a year)
+      #             Date to consider: start location (not start provider)
+      #             Create 'year.entry': is the variable of the year in the location
+      #             Note: this variable may change if the panel has different time interval
+      # ------------------------------------------------------------------------------------
+        
+            cqc = cqc %>% select(location.id:postcode2, oa11:msoa11, lat, long, imd) %>%
+                        mutate_each(funs(as.Date), date)
+                      
+                      
+            # Extract the year in the 'date' variable
+            cqc = cqc %>% mutate(year.entry = format(date, "%Y"))
+            
+            cqc = cqc %>% mutate(year.entry = ifelse(registry == "location.start", year.entry, NA)) %>%
+              select(location.id:date, year.entry, reg:imd)
+        
+      # Link datasets at lsoa and msoa level  
+      
+        
+
+        cqc.prices.lsoa = left_join(cqc, house.prices.lsoa, by = c("lsoa11" = "lsoa11", "year.entry" = "year.trans"))
+          
+          
               
               
               
