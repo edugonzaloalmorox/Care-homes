@@ -1,7 +1,7 @@
 # Link CQC to house prices
 
 # created: 3/10/2016
-# modified: 3/10/2016
+# modified: 4/10/2016
 # author: Edu Gonzalo (Newcastle University)
 # ------------------------------------------
 
@@ -172,8 +172,12 @@ prices = prices %>% select( -item, -date.1)
         
 
         cqc.prices.lsoa = left_join(cqc, house.prices.lsoa, by = c("lsoa11" = "lsoa11", "year.entry" = "year.trans"))
-          
-          
+        
+        cqc.prices.msoa = left_join(cqc, house.prices.msoa, by = c("msoa11" = "msoa11", "year.entry" = "year.trans"))
+        
+        
+        
+        write.csv(cqc.prices.lsoa, "cqc.prices.lsoa.csv", row.names = FALSE)
               
               
               
