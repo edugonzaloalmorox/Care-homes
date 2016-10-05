@@ -36,5 +36,7 @@ Contains scripts with different types of analysis.
    - `link_geographical_cqc`: Link information from the CQC and the ONS geographical directory.
    
    - `cqc_house_prices`: Information regarding the _price paid_ data from the Land Registry. It also geolocates it transaction with data from the [ONS Directory](https://data.gov.uk/dataset/ons-postcode-directory-august-2016-centroids). 
+   
+   - `neighbour_statistics`: Information from the Department of Work and Pensions ([DWP](https://www.nomisweb.co.uk)) concerning benefits. 
 
 
