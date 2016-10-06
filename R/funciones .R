@@ -48,3 +48,10 @@
       return(dta)
       
       }
+# creating long data.frames with neighbourhood statistics 
+      
+      neighbour <-  function(dta){
+        
+        dta = dta %>% gather(year, pension.credit, feb.2010:feb.2016)
+        return(dta)
+      }
