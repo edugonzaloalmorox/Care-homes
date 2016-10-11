@@ -169,6 +169,20 @@ prices = prices %>% select( -item, -date.1)
         
       # Link datasets at lsoa and msoa level  
       
+            # check lsoa levels in both datasets
+            # ------------------------------------
+             lsoa.house = with(house.prices.lsoa, unique(lsoa11)) 
+             lsoa.cqc = with(cqc, unique(lsoa11))
+             
+             setdiff(lsoa.cqc, lsoa.house)
+            # there are no differences [character 0]- all lsoas from cqc are contained in house prices
+            # -------------------------------------
+             
+             
+             
+         house.prices.lsoa = house.prices.lsoa %>%
+           rename(lsoa.mean.price = mean_price, lsoa.max.price = max_price,
+                  lsoa.min.price = min_price, lsoa.house.transactions = n.transactions)
         
 
         cqc.prices.lsoa = left_join(cqc, house.prices.lsoa, by = c("lsoa11" = "lsoa11", "year.entry" = "year.trans"))
