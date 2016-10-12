@@ -21,7 +21,7 @@ Results of the analysis in terms of datasets, figures and/or tables.
 
 ### R 
 
-Contains scripts with different types of analysis.
+Contains scripts with different types of analysis. Some scripts may include updated analysis. 
 
    - `funciones`: List of functions used for the analysis. 
    

@@ -1,7 +1,7 @@
 # Entries and exits 
 
 # created: 27/09/2016
-# modified: 28/09/2016
+# modified: 12/10/2016
 # author: Edu Gonzalo (Newcastle University)
 # ------------------------------------------
 
@@ -20,6 +20,10 @@
       # define exits 
       # change the structure of the dataset -long format: it enables to identify each date referred to 
       # each data frame
+
+# Important: --> Check Update 12/10/2016 (end of the script)
+# ----------------------------------------------------------
+
 
 
 # -------------------------------
@@ -245,8 +249,46 @@ rm(dup.names)
           
           # cqc.entries.csv reflects the entries and exits in the CQC registry
           # it identifies which entries are de novo and which are definite exits
-          
 
+          
+# -------------------------------------------------------------------------------------------          
+# Update 12/10/2016
+# Alternative approach for calculating entries. It considers cqc.prices.pop.csv and updates it. 
+          
+          # Some postcodes are repeated - e.g. novo and spurious entries (read above for details)
+          # Filter dataset by observations corresponding to location start
+          # Idea: the earliest location.start constitutes a "de novo"  -  select those and create a flowing variable with de novo
+          #       merge the new variable with the former information 
+          
+          
+          # Select those observations corresponding to the location.start. Important: sort by date (earliest, first)
+          test = cqc %>% 
+            group_by(postcode) %>% arrange(postcode, date) %>% filter(registry  == "location.start")
+  
+          test = test %>% mutate_each(funs(as.factor), postcode) %>% as.data.frame()
+          
+          # Create 'flow' entry to discriminate between: de novo and supurious entries. I select just the first row (the earliest)
+          test.1.1 = test %>% 
+            group_by(postcode)%>%
+            filter(row_number()==1) %>%
+            mutate(flow.entry = "novo") %>% select(location.id, location.name, provider.id, provider.name,
+                                                   postcode, registry, date,flow.entry)
+          
+          # Link with the remaining location.starts 
+          test.2 = left_join(test, test.1.1, by = c("location.id", "location.name", "provider.id", "provider.name",
+                                                    "registry", "date", "postcode"))
+          
+          test.2 = test.2 %>% select(location.id, location.name, provider.id, provider.name,
+                                     postcode, registry, date,flow.entry)
+          
+          # Link all the locations with the base dataset
+          test.3 = left_join(cqc_clean, test.2, by = c("location.id", "location.name", "provider.id", "provider.name",
+                                                       "registry", "date", "postcode"))
+          
+          test.3 = test.3 %>% select(location.id:year.entry, reg,flow.entry, postcode:old)
+          
+          write.csv(test.3, "cqc.prices.pop.csv", row.names = FALSE)
+          
 
 
 
