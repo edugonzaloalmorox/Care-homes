@@ -1,7 +1,7 @@
 # Analysis of the data 
 
 # created: 10/10/2016
-# modified: 11/10/2016
+# modified: 13/10/2016
 # author: Edu Gonzalo (Newcastle University)
 # ------------------------------------------
 
@@ -44,7 +44,7 @@ cqc  = import("cqc.prices.pop.csv")
                                   provider.id, location.status, provider.status, location.type,
                                     city, local.authority, county, location.region,
                                     provider.local.authority, registry, reg, postcode, postcode2,
-                                    oa11, lsoa11, msoa11, imd, n.transactions, lsoa.name) %>% mutate_each(funs(as.Date), date) 
+                                    oa11, lsoa11, msoa11, imd) %>% mutate_each(funs(as.Date), date) 
             
             
             cqc = cqc %>% mutate(month.year.entry = format(date, "%Y-%m")) %>% 
@@ -73,6 +73,8 @@ cqc  = import("cqc.prices.pop.csv")
                    select(-mean_price, -lsoa.name, - persons, -old.people, -max_price, -min_price, -n.transactions)
 
    
+          write.csv(cqc_clean, "cqc.prices.pop.csv", row.names = FALSE)
+          
           cqc_clean = prueba  
           
           lsoas = with(cqc_clean, unique(lsoa11))
@@ -89,7 +91,7 @@ cqc  = import("cqc.prices.pop.csv")
             # ----------------------------------------------------
       
                 # postcodes and id´s where the entry was in march 2011 or after 
-                muestra = cqc_clean %>% filter(registry == "location.start" & date >= "2011-03-01") %>% arrange(date)
+                muestra = cqc %>% filter(registry == "location.start" & date >= "2011-03-01") %>% arrange(postcode, provider.id)
                 
                 # number of care homes in the sample 
                 muestra_post = with(muestra, unique(location.id)) 
@@ -100,11 +102,10 @@ cqc  = import("cqc.prices.pop.csv")
       
       # 2.  Select those observations that I want to consider 
       #     -------------------------------------------------
-                
+      
+
+                      
                 # HHI 
-                
-                
-                
                 
                 
                 hhi <- function(x) {
@@ -121,22 +122,39 @@ cqc  = import("cqc.prices.pop.csv")
                 
                 
                 
-              test = muestra %>% filter(registry == "location.start") %>%
-                group_by(provider.id, year.entry, local.authority) %>% 
+              
+             
+              
+              
+            
+              
+               x= x %>% mutate(share = (beds.provider/beds.local.authority)*100)
+               
+              
+              x = x %>% group_by(provider.id) %>% 
                 mutate(beds.provider = sum(care.homes.beds, na.rm = TRUE)) %>%
                 ungroup() %>%
-                group_by(local.authority, year.entry) %>% 
-                mutate(beds.local.authority = sum(care.homes.beds, na.rm = TRUE), 
-                 hhi = ((beds.provider/beds.local.authority)^2))
-              
-              
+                group_by(local.authority,) %>% 
+                mutate(beds.local.authority = sum(care.homes.beds, na.rm = TRUE)) %>% arrange(provider.id) %>% 
                 
+              
+              locales = c("Birmingham", "Hertfordshire") 
+              registro = c("location.start", "location.end")
+              anos = c(2012, 2013)
                 
-                                                                 
-                                                                 check =  test %>% group_by(provider.id) %>% filter(n()>=2) %>%
-                  select(location.id, location.name, provider.id, provider.name,
-                                        care.homes.beds, beds.provider, beds.local.authority, local.authority, year.entry) %>%
-                  arrange(provider.id)
+              x = cqc %>% filter(local.authority %in% locales & registry %in% registro) %>% select(location.id:care.homes.beds, local.authority, registry, date)
+              
+              x = muestra %>% group_by(local.authority, year.entry) %>% mutate(beds.la = sum(care.homes.beds, na.rm = TRUE)) %>% ungroup() %>%
+                group_by(provider.id, local.authority, year.entry) %>% mutate(beds.provider = sum(care.homes.beds, na.rm =TRUE), 
+                                                 share = (beds.provider/beds.la)^2)
+              
+               x_hhi = x %>% group_by(year.entry, local.authority, provider.id) %>% filter(row_number() == 1)
+              
+               x_hhi = x_hhi %>% group_by(local.authority, year.entry) %>% mutate(hhi = sum(share)) %>% select(local.authority, year.entry, hhi)                      
+            
+        
+                                                     
+                      
                 
                                                           
                         
