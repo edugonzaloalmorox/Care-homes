@@ -40,5 +40,7 @@ Contains scripts with different types of analysis. Some scripts may include upda
    - `neighbour_statistics`: Information from the Department of Work and Pensions ([DWP](https://www.nomisweb.co.uk)) concerning benefits. 
    
    - `demographics`: Information regarding the population with information from the [ONS Census](https://www.ons.gov.uk/census/2011census/2011censusdata)
+   
+   - `hhi`: Calculation of the Herfindahl-Hirschman index (HHI) for each local authority based on the beds of each provider.
 
 
