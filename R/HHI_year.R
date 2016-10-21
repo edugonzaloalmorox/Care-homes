@@ -83,6 +83,10 @@ data = import("data.csv")
              y_clean = y_linked %>% filter(is.na(toy)) %>% select(-toy, status)
             
              
+<<<<<<< HEAD
+=======
+             
+>>>>>>> d214f11ea9c0d7ae327d7a82f8e48dd7f080afcf
              y_clean = as.data.frame(y_clean)
              
            write.csv(y_clean, "hhi.sample.csv", row.names = FALSE)

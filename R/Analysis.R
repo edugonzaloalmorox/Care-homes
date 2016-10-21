@@ -29,6 +29,12 @@ library(lme4)
 
 
 
+
+cqc  = import("cqc.prices.pop.csv")
+
+
+
+
 cqc  = import("cqc.prices.pop.csv")
 
 
@@ -188,7 +194,12 @@ fig1 = ggplot(test, aes(x = entry, y = log.price)) +
 # ----------------------------- 
 # Regression multilevel models 
 # ----------------------------
+<<<<<<< HEAD
 
+=======
+   
+   
+>>>>>>> d214f11ea9c0d7ae327d7a82f8e48dd7f080afcf
    
    # Grouping years 
    
