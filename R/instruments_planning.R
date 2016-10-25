@@ -113,7 +113,7 @@ setwd("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/p
           
           write.csv(instr_cqc, "instr_cqc.csv", row.names = FALSE)  # iv information based on cqc postcodes 
          
-         
+         instr_cqc = import("instr_cqc.csv")
 
           
   
