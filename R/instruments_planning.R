@@ -1,6 +1,6 @@
 # Instruments - regulatory information 
 # Created: 19/10/2016
-# Modified: 21/10/2016
+# Modified: 25/10/2016
 
 
 # Regulatory information regarding planning decisions 
@@ -81,28 +81,39 @@ setwd("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/p
           
     # Link instruments to CQC postcodes 
           
-          cqc_instrument = prueba %>% select(postcode, postcode2, local.authority, la, old.la)
+          cqc_instrument = cqc_geo %>% select(postcode, postcode2, local.authority, la, old.la)
           
-          cqc_instrument = cqc_instrument %>% distinct(local.authority, la, old.la)
+          cqc_instrument = cqc_geo %>% distinct(local.authority, la, old.la) # select unique
+          
            
         # select unique la codes in LPA and CQC 
           
-          codes_lpa = lpa %>% distinct(lpa_code) %>% as.data.frame()
+          codes_lpa = lpa %>% distinct(lpa_code) %>% as.data.frame()   # (329 different old codes in lpa)
           
-          codes_cqc = prueba %>% distinct(old.la) %>% as.data.frame()
+          codes_cqc = cqc_geo %>% distinct(old.la) %>% as.data.frame() # (325 different old codes in cqc)
           
-          # common old la codes in  
+          # common and differen old la codes in cqc data and LPA -filter in LPA by the codes contained in CQC  
           
-           common = intersect(codes_cqc$old.la, codes_lpa$lpa_code)
+           instr.of.cqc = lpa %>% filter(lpa_code %in% lev_cqc)
+                   inex = setdiff(lev_cqc, lev_lpa) # those old that are in CQC but not in LPA
+                   
+                   inex_names = la_codes %>% filter(old.la %in% inex)
+                   
+          
+          common = intersect(codes_cqc$old.la.x, codes_lpa$lpa_code)
+           different = set(codes_lpa$lpa_code, codes_cqc$old.la)
+           
+           
           
                 # select those codes in the instruments LPA 
            
+          
           instr = lpa %>% filter(lpa_code %in% common)
           
-          instr_cqc = left_join(instr, cqc_instrument, by = c("lpa_code" = "old.la"))
+          instr_cqc = left_join(instr, cqc_instrument, by = c("lpa_code" = "old.la.x"))
           
           # reorder variables 
-          instr_cqc = instr_cqc %>% select(year, lpa_code, lpa_num, local.authority, lpa_name:trafsqtrend) 
+          instr_cqc = instr_cqc %>% select(year, lpa_code, lpa_num, local.authority, lpa_name:trafsqtrend, -total) 
           
           
           
@@ -113,7 +124,10 @@ setwd("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/p
           
           write.csv(instr_cqc, "instr_cqc.csv", row.names = FALSE)  # iv information based on cqc postcodes 
          
-         instr_cqc = import("instr_cqc.csv")
+         
+      
+          
+        
 
           
   
