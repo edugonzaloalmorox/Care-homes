@@ -81,10 +81,10 @@ colnames(prices_waves) = vars
       geoprices = left_join(prices2010c, ons_house, by = "post2")
       write.csv(geoprices, "house_prices_geolocated.csv")
       
+      library(rio)
+      geoprices = import("house_prices_geolocated.csv")
       
-      
-      
-     
+     head(geoprices)
       
       
       
