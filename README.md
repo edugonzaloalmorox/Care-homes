@@ -21,7 +21,13 @@ Results of the analysis in terms of datasets, figures and/or tables.
 
 ### R 
 
-Contains scripts with different types of analysis. Some scripts may include updated analysis. 
+Contains scripts with different types of analysis. The scripts are divided into two main folders that represent the analysis at different levels:
+   
+   - `Wave 1`: Includes information corresponding to the first sample that considers only positive *novo* entry rates.
+   
+   - `Wave 2`: Includes information corresponding to the second sample that considers positive and 0 *novo* entry rates. 
+   
+In addition, the other scripts are the initial ones corresponding to early stages of the project. There is a caveat. Every script may include updated analyses. 
 
    - `funciones`: List of functions used for the analysis. 
    
