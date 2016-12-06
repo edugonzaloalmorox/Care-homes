@@ -24,17 +24,21 @@
       #-------------------------------
 
 
-
+  # Load data 
       cqc  = import("cqc.prices.pop_v1.csv")
       hhi = import("data.hhi.lsa.wave2.csv")
       hhi1 = import("data.hhi.lsa.csv")
+      instr_cqc = import("instr_cqc.csv")
+      
 
 
   # select novo entries 
       
      sam.1 = cqc %>% filter(flow.entry == "novo") %>% select(-reg)
      
-  # count the entries in each local authority and year 
+
+     
+# count the entries in each local authority and year 
      
      entries_year = sam.1 %>% group_by(local.authority, year.entry, flow.entry) %>% 
        tally() %>% select(-flow.entry) %>% 
@@ -84,7 +88,7 @@
           la.hhi = with(hhi1, unique(local.authority))
           
           # local authorities that don´t have entries in sample of analysis 
-          no.la = setdiff(la.cqc.all, la.cqc)
+          no.la = setdiff(la.cqc.all, la.cqc) 
       
      
      hhi_year_la = hhi1 %>% distinct(local.authority, year, hhi) %>% filter(year != 2010 & !(local.authority %in% no.la))
@@ -94,6 +98,48 @@
      
      entries_la_year = left_join(entries_la_year, hhi_year_la, by= c("local.authority" =  "local.authority", "year.entry" = "year"))
 
+
+     
+# Add information regarding instruments
+# --------------------------------------
+     
+  sample.1 = import("sample.1.csv")
+  instr_cqc =  import("instr_cqc.csv")
+     
+  # Instruments are  10 years - create 'year.entry' for reflecting this gap
+     
+     instr_cqc = instr_cqc %>% mutate(year.entry = year + 10) %>% select(year, year.entry, local.authority, lpa_code:la)
+     
+     # subset the instruments
+     
+     anos = c(2010, 2011, 2012, 2013, 2014, 2015, 2016)
+     
+     instr_cqc_clean = instr_cqc %>% filter(year.entry %in% anos) %>% mutate_each(funs(as.character), year.entry)
+     
+     instrumentos = instr_cqc_clean %>% select(year.entry, year, local.authority, rindex2:trafsqtrend, -total)
+
+     instr_link = instrumentos %>% select(year, year.entry, local.authority, rindex2, lrindex2, male_earn_real, lmale_earn_real,
+                                          refusal_maj_7908, delchange_maj1, pdevel90_m2, range_meters, pop_density_1911_imp, labourvotes1983)
+     
+     
+     cumbria = instr_cqc %>% filter(local.authority == "Cumbria")
+     
+     # link instruments data and data from cqc (in sam.1)
+     
+     
+     test = left_join(sample.1, instr_link, by = c("local.authority", "year.entry"))
+    
+     
+check = test %>% filter(is.na(rindex2))
+    
+     
+     
+  # Link IV
+   
+  prueba = left_join(entries_la_year, instr_cqc, by = c("old.la" = "local.authority", "year.entry" = "year.entry.10") )
+  
+     
+     
 ####   #####   
 # Estimation 
 ############
@@ -109,6 +155,15 @@
   psample = pdata.frame(sample.1, index = c("local.authority", "year.entry"), row.names = TRUE)
   
 # Estimations
+  
+  # OLS 
+  
+  mod_ols = lm(entries ~ log.prices, data=psample)
+  summary(mod_ols)
+  
+  
+  
+  
   
   mod_fe = plm(entries~ mean.imd + prop.old.la + prop.jsa.la + prop.pension.credit.la + prop.income.sup.la + log.prices + hhi, data=psample, model="within")
   

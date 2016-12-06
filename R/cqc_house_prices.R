@@ -95,7 +95,44 @@ prices = prices %>% select( -item, -date.1)
               
               write.csv(geo.house.prices, "house.transactions.geolocated.csv", row.names = FALSE) # house prices that are geolocated 
               
-                
+
+              
+     # --------------------
+     # Geocode house prices
+     # --------------------
+     # I geocode mean prices associated with postcodes 
+     # Idea: Add geographical information to the transactions since 2010
+              
+              
+              
+          # I use prices 2010 to add geographical information - not just LSOAs and MSOAs
+              setwd("/Users/Personas/Documents/research/other/visualizations/house prices/house_prices_england/data /raw")
+              setwd("/Users/Personas/Downloads/ONSPD_AUG_2016_UK_V2/Data")
+              
+              onspd = import("onspd_aug16.csv")
+              prices = import("england.prices.stats.csv")
+
+              
+              
+              # select the codes associated with the postcodes in prices
+              
+              house_post = prices %>% distinct(postcode, post2) 
+              
+              niv=house_post$post2
+              
+              
+              onspd = onspd %>% mutate(post2 = gsub("\\s", "",pcd)) # create post2 --> postcodes without blank space 
+              
+              # filter post2 in terms of house_post: aim: select the postcodes corresponding to the transactions 
+              
+              ons_house = onspd %>% filter(post2 %in% niv) %>% arrange(post2)
+              prices = prices %>% arrange(post2, year.trans)
+              
+              # link datasets 
+              
+              prueba = left_join(prices, ons_house, by = "post2")
+              write.csv(prueba, "geo_house_prices.csv", row.names = FALSE)              
+                              
 # -----------------------------------
 # Select variables for the analysis #   
 # -----------------------------------
