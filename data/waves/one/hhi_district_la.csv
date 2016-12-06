@@ -1,0 +1,980 @@
+"local.authority","lpa","year","hhi"
+"Hertfordshire","Welwyn Hatfield","0",0.0285199591829057
+"Hertfordshire","Welwyn Hatfield","1",0.0231383665753636
+"Hertfordshire","Welwyn Hatfield","2",0.0244769058292189
+"Hertfordshire","St Albans","0",0.0285199591829057
+"Hertfordshire","St Albans","1",0.0231383665753636
+"Hertfordshire","St Albans","2",0.0244769058292189
+"Hertfordshire","Dacorum","0",0.0285199591829057
+"Hertfordshire","Dacorum","1",0.0231383665753636
+"Hertfordshire","Dacorum","2",0.0244769058292189
+"Hertfordshire","North Hertfordshire","0",0.0285199591829057
+"Hertfordshire","North Hertfordshire","1",0.0231383665753636
+"Hertfordshire","North Hertfordshire","2",0.0244769058292189
+"Birmingham","Birmingham","0",0.0142108236585048
+"Birmingham","Birmingham","1",0.0123884086281662
+"Birmingham","Birmingham","2",0.0128923802316491
+"Solihull","Solihull","0",0.041475571999332
+"Solihull","Solihull","1",0.0497532641645017
+"Solihull","Solihull","2",0.0386759899085509
+"Worcestershire","Bromsgrove","0",0.0172789508240598
+"Worcestershire","Bromsgrove","1",0.0151875109017966
+"Worcestershire","Bromsgrove","2",0.0146519075330388
+"Sandwell","Sandwell","0",0.0440341251190582
+"Sandwell","Sandwell","1",0.0454740364202866
+"Sandwell","Sandwell","2",0.0436237014512124
+"Walsall","Walsall","0",0.0416322493953238
+"Walsall","Walsall","1",0.0297458345571119
+"Walsall","Walsall","2",0.0305102457427508
+"Warwickshire","North Warwickshire","0",0.0272205051059027
+"Warwickshire","North Warwickshire","1",0.0276399739480547
+"Warwickshire","North Warwickshire","2",0.027067409596892
+"Warwickshire","Stratford-on-Avon","0",0.0272205051059027
+"Warwickshire","Stratford-on-Avon","1",0.0276399739480547
+"Warwickshire","Stratford-on-Avon","2",0.027067409596892
+"Dudley","Dudley","0",0.0328261381670304
+"Dudley","Dudley","1",0.0275447439550004
+"Dudley","Dudley","2",0.0231621824571475
+"Staffordshire","Lichfield","0",0.0122351000255182
+"Staffordshire","Lichfield","1",0.0114293567132602
+"Staffordshire","Lichfield","2",0.00974532905423976
+"Staffordshire","Tamworth","0",0.0122351000255182
+"Staffordshire","Tamworth","1",0.0114293567132602
+"Staffordshire","Tamworth","2",0.00974532905423976
+"Worcestershire","Redditch","0",0.0172789508240598
+"Worcestershire","Redditch","1",0.0151875109017966
+"Worcestershire","Redditch","2",0.0146519075330388
+"Somerset","Mendip","0",0.0384070901135448
+"Somerset","Mendip","1",0.0390834017896759
+"Somerset","Mendip","2",0.0425902740709469
+"Bath and North East Somerset","Bath and North East Somerset UA","0",0.0395942690801811
+"Bath and North East Somerset","Bath and North East Somerset UA","1",0.0392331056666721
+"Bath and North East Somerset","Bath and North East Somerset UA","2",0.0414070340031273
+"Wiltshire","Wiltshire UA","0",0.0418389831554702
+"Wiltshire","Wiltshire UA","1",0.0345653871720118
+"Wiltshire","Wiltshire UA","2",0.0374328345925902
+"Somerset","South Somerset","0",0.0384070901135448
+"Somerset","South Somerset","1",0.0390834017896759
+"Somerset","South Somerset","2",0.0425902740709469
+"Lancashire","Burnley","0",0.00777939889644899
+"Lancashire","Burnley","1",0.0061691694924114
+"Lancashire","Burnley","2",0.00657798867779473
+"Lancashire","Pendle","0",0.00777939889644899
+"Lancashire","Pendle","1",0.0061691694924114
+"Lancashire","Pendle","2",0.00657798867779473
+"Blackburn with Darwen","Blackburn with Darwen UA","0",0.0579486570942605
+"Blackburn with Darwen","Blackburn with Darwen UA","1",0.0550708296419591
+"Blackburn with Darwen","Blackburn with Darwen UA","2",0.0505626705046568
+"Lancashire","Hyndburn","0",0.00777939889644899
+"Lancashire","Hyndburn","1",0.0061691694924114
+"Lancashire","Hyndburn","2",0.00657798867779473
+"Lancashire","Ribble Valley","0",0.00777939889644899
+"Lancashire","Ribble Valley","1",0.0061691694924114
+"Lancashire","Ribble Valley","2",0.00657798867779473
+"Lancashire","Rossendale","0",0.00777939889644899
+"Lancashire","Rossendale","1",0.0061691694924114
+"Lancashire","Rossendale","2",0.00657798867779473
+"Bradford","Bradford","0",0.0218552578579908
+"Bradford","Bradford","1",0.0186656098421289
+"Bradford","Bradford","2",0.0185384778391771
+"Leeds","Leeds","0",0.0229601093854446
+"Leeds","Leeds","1",0.024201651421183
+"Leeds","Leeds","2",0.0196413487798046
+"Kirklees","Kirklees","0",0.0322963645153439
+"Kirklees","Kirklees","1",0.0252205767184973
+"Kirklees","Kirklees","2",0.0252078374292156
+"North Yorkshire","Craven","0",0.0191591594973199
+"North Yorkshire","Craven","1",0.0154684050164462
+"North Yorkshire","Craven","2",0.0165291726189662
+"Bournemouth","Bournemouth UA","0",0.0271712637032502
+"Bournemouth","Bournemouth UA","1",0.0247813579854274
+"Bournemouth","Bournemouth UA","2",0.0206891058168435
+"Poole","Poole UA","0",0.054769132252523
+"Poole","Poole UA","1",0.0400656865858331
+"Poole","Poole UA","2",0.0430102678529719
+"Dorset","Purbeck","0",0.0284680392980397
+"Dorset","Purbeck","1",0.0232062976818653
+"Dorset","Purbeck","2",0.0226532393330883
+"Dorset","East Dorset","0",0.0284680392980397
+"Dorset","East Dorset","1",0.0232062976818653
+"Dorset","East Dorset","2",0.0226532393330883
+"Dorset","Christchurch","0",0.0284680392980397
+"Dorset","Christchurch","1",0.0232062976818653
+"Dorset","Christchurch","2",0.0226532393330883
+"Hampshire","New Forest","0",0.0154611691630368
+"Hampshire","New Forest","1",0.0124749288678228
+"Hampshire","New Forest","2",0.0110976195155219
+"Bury","Bury","0",0.0480188776033651
+"Bury","Bury","1",0.0406253857753175
+"Bury","Bury","2",0.0395878356237115
+"Bolton","Bolton","0",0.055032433563507
+"Bolton","Bolton","1",0.0470498803970507
+"Bolton","Bolton","2",0.0447291823930001
+"East Sussex","Lewes","0",0.00708105138719419
+"East Sussex","Lewes","1",0.00741929618300282
+"East Sussex","Lewes","2",0.00775024335782168
+"West Sussex","Worthing","0",0.0098628582107253
+"West Sussex","Worthing","1",0.00960503129841281
+"West Sussex","Worthing","2",0.0101917083890033
+"West Sussex","Arun","0",0.0098628582107253
+"West Sussex","Arun","1",0.00960503129841281
+"West Sussex","Arun","2",0.0101917083890033
+"Brighton and Hove","Brighton and Hove UA","0",0.02164729711099
+"Brighton and Hove","Brighton and Hove UA","1",0.0206253176928241
+"Brighton and Hove","Brighton and Hove UA","2",0.0213695011422987
+"West Sussex","Adur","0",0.0098628582107253
+"West Sussex","Adur","1",0.00960503129841281
+"West Sussex","Adur","2",0.0101917083890033
+"East Sussex","Wealden","0",0.00708105138719419
+"East Sussex","Wealden","1",0.00741929618300282
+"East Sussex","Wealden","2",0.00775024335782168
+"East Sussex","Eastbourne","0",0.00708105138719419
+"East Sussex","Eastbourne","1",0.00741929618300282
+"East Sussex","Eastbourne","2",0.00775024335782168
+"West Sussex","Horsham","0",0.0098628582107253
+"West Sussex","Horsham","1",0.00960503129841281
+"West Sussex","Horsham","2",0.0101917083890033
+"West Sussex","Mid Sussex","0",0.0098628582107253
+"West Sussex","Mid Sussex","1",0.00960503129841281
+"West Sussex","Mid Sussex","2",0.0101917083890033
+"Bromley","Bromley","0",0.0419292456837053
+"Bromley","Bromley","1",0.0370527011801181
+"Bromley","Bromley","2",0.0427139702927778
+"Lewisham","Lewisham","0",0.040639540238354
+"Lewisham","Lewisham","1",0.0413994517378401
+"Lewisham","Lewisham","2",0.0457810151462597
+"Kent","Sevenoaks","0",0.00707441295141101
+"Kent","Sevenoaks","1",0.00684902225664376
+"Kent","Sevenoaks","2",0.00637755371823657
+"Bristol, City of","Bristol, City of UA","0",0.0389822368484669
+"Bristol, City of","Bristol, City of UA","1",0.0361849351006897
+"Bristol, City of","Bristol, City of UA","2",0.0310133666792118
+"South Gloucestershire","South Gloucestershire UA","0",0.0420745078688668
+"South Gloucestershire","South Gloucestershire UA","1",0.0320947335904419
+"South Gloucestershire","South Gloucestershire UA","2",0.0352562306049967
+"North Somerset","North Somerset UA","0",0.015052655554622
+"North Somerset","North Somerset UA","1",0.0158360775608114
+"North Somerset","North Somerset UA","2",0.0172905596454246
+"Somerset","Sedgemoor","0",0.0384070901135448
+"Somerset","Sedgemoor","1",0.0390834017896759
+"Somerset","Sedgemoor","2",0.0425902740709469
+"Cumbria","Eden","0",0.0361635318073353
+"Cumbria","Eden","1",0.0322649086171681
+"Cumbria","Eden","2",0.0300471327154454
+"Cumbria","Carlisle","0",0.0361635318073353
+"Cumbria","Carlisle","1",0.0322649086171681
+"Cumbria","Carlisle","2",0.0300471327154454
+"Cumbria","Allerdale","0",0.0361635318073353
+"Cumbria","Allerdale","1",0.0322649086171681
+"Cumbria","Allerdale","2",0.0300471327154454
+"Cumbria","Copeland","0",0.0361635318073353
+"Cumbria","Copeland","1",0.0322649086171681
+"Cumbria","Copeland","2",0.0300471327154454
+"Essex","Uttlesford","0",0.0266353716589067
+"Essex","Uttlesford","1",0.0229731611612898
+"Essex","Uttlesford","2",0.023505421495836
+"Cambridgeshire","Cambridge","0",0.0219492506455408
+"Cambridgeshire","Cambridge","1",0.019984201700894
+"Cambridgeshire","Cambridge","2",0.0201337506402993
+"Cambridgeshire","South Cambridgeshire","0",0.0219492506455408
+"Cambridgeshire","South Cambridgeshire","1",0.019984201700894
+"Cambridgeshire","South Cambridgeshire","2",0.0201337506402993
+"Cambridgeshire","East Cambridgeshire","0",0.0219492506455408
+"Cambridgeshire","East Cambridgeshire","1",0.019984201700894
+"Cambridgeshire","East Cambridgeshire","2",0.0201337506402993
+"Suffolk","Forest Heath","0",0.0209443500902056
+"Suffolk","Forest Heath","1",0.0184887243299447
+"Suffolk","Forest Heath","2",0.016236111971785
+"Suffolk","St Edmundsbury","0",0.0209443500902056
+"Suffolk","St Edmundsbury","1",0.0184887243299447
+"Suffolk","St Edmundsbury","2",0.016236111971785
+"Cheshire West and Chester","Cheshire West and Chester UA","0",0.0290907759821437
+"Cheshire West and Chester","Cheshire West and Chester UA","1",0.0319373776169028
+"Cheshire West and Chester","Cheshire West and Chester UA","2",0.0303304165995265
+"Wirral","Wirral","0",0.0166522600329706
+"Wirral","Wirral","1",0.0160473968849412
+"Wirral","Wirral","2",0.0164079269962189
+"Essex","Maldon","0",0.0266353716589067
+"Essex","Maldon","1",0.0229731611612898
+"Essex","Maldon","2",0.023505421495836
+"Essex","Chelmsford","0",0.0266353716589067
+"Essex","Chelmsford","1",0.0229731611612898
+"Essex","Chelmsford","2",0.023505421495836
+"Essex","Basildon","0",0.0266353716589067
+"Essex","Basildon","1",0.0229731611612898
+"Essex","Basildon","2",0.023505421495836
+"Essex","Brentwood","0",0.0266353716589067
+"Essex","Brentwood","1",0.0229731611612898
+"Essex","Brentwood","2",0.023505421495836
+"Essex","Epping Forest","0",0.0266353716589067
+"Essex","Epping Forest","1",0.0229731611612898
+"Essex","Epping Forest","2",0.023505421495836
+"Essex","Harlow","0",0.0266353716589067
+"Essex","Harlow","1",0.0229731611612898
+"Essex","Harlow","2",0.023505421495836
+"Hertfordshire","East Hertfordshire","0",0.0285199591829057
+"Hertfordshire","East Hertfordshire","1",0.0231383665753636
+"Hertfordshire","East Hertfordshire","2",0.0244769058292189
+"Essex","Braintree","0",0.0266353716589067
+"Essex","Braintree","1",0.0229731611612898
+"Essex","Braintree","2",0.023505421495836
+"Suffolk","Babergh","0",0.0209443500902056
+"Suffolk","Babergh","1",0.0184887243299447
+"Suffolk","Babergh","2",0.016236111971785
+"Essex","Tendring","0",0.0266353716589067
+"Essex","Tendring","1",0.0229731611612898
+"Essex","Tendring","2",0.023505421495836
+"Essex","Colchester","0",0.0266353716589067
+"Essex","Colchester","1",0.0229731611612898
+"Essex","Colchester","2",0.023505421495836
+"Croydon","Croydon","0",0.0217384240793675
+"Croydon","Croydon","1",0.0217237500870933
+"Croydon","Croydon","2",0.0238496966247776
+"Sutton","Sutton","0",0.0276160470489393
+"Sutton","Sutton","1",0.0226667429428628
+"Sutton","Sutton","2",0.0242080546899618
+"Surrey","Tandridge","0",0.0132068422720173
+"Surrey","Tandridge","1",0.0142539768157939
+"Surrey","Tandridge","2",0.0145130518807934
+"Merton","Merton","0",0.0679919435074862
+"Merton","Merton","1",0.0662784476727437
+"Merton","Merton","2",0.0741579861111111
+"Surrey","Reigate and Banstead","0",0.0132068422720173
+"Surrey","Reigate and Banstead","1",0.0142539768157939
+"Surrey","Reigate and Banstead","2",0.0145130518807934
+"Kent","Thanet","0",0.00707441295141101
+"Kent","Thanet","1",0.00684902225664376
+"Kent","Thanet","2",0.00637755371823657
+"Kent","Canterbury","0",0.00707441295141101
+"Kent","Canterbury","1",0.00684902225664376
+"Kent","Canterbury","2",0.00637755371823657
+"Kent","Dover","0",0.00707441295141101
+"Kent","Dover","1",0.00684902225664376
+"Kent","Dover","2",0.00637755371823657
+"Kent","Shepway","0",0.00707441295141101
+"Kent","Shepway","1",0.00684902225664376
+"Kent","Shepway","2",0.00637755371823657
+"Kent","Ashford","0",0.00707441295141101
+"Kent","Ashford","1",0.00684902225664376
+"Kent","Ashford","2",0.00637755371823657
+"Warwickshire","Nuneaton and Bedworth","0",0.0272205051059027
+"Warwickshire","Nuneaton and Bedworth","1",0.0276399739480547
+"Warwickshire","Nuneaton and Bedworth","2",0.027067409596892
+"Leicestershire","Hinckley and Bosworth","0",0.0242459501240348
+"Leicestershire","Hinckley and Bosworth","1",0.0283248268373091
+"Leicestershire","Hinckley and Bosworth","2",0.0294307037120452
+"Coventry","Coventry","0",0.0435630016227358
+"Coventry","Coventry","1",0.0352325874750141
+"Coventry","Coventry","2",0.0332448642266824
+"Warwickshire","Rugby","0",0.0272205051059027
+"Warwickshire","Rugby","1",0.0276399739480547
+"Warwickshire","Rugby","2",0.027067409596892
+"Northamptonshire","Daventry","0",0.0178184753502736
+"Northamptonshire","Daventry","1",0.0130309829572139
+"Northamptonshire","Daventry","2",0.0127277354420377
+"Warwickshire","Warwick","0",0.0272205051059027
+"Warwickshire","Warwick","1",0.0276399739480547
+"Warwickshire","Warwick","2",0.027067409596892
+"Cheshire East","Cheshire East UA","0",0.0315395997312433
+"Cheshire East","Cheshire East UA","1",0.0285294548665073
+"Cheshire East","Cheshire East UA","2",0.0260344669569539
+"Staffordshire","Newcastle-under-Lyme","0",0.0122351000255182
+"Staffordshire","Newcastle-under-Lyme","1",0.0114293567132602
+"Staffordshire","Newcastle-under-Lyme","2",0.00974532905423976
+"Kent","Gravesham","0",0.00707441295141101
+"Kent","Gravesham","1",0.00684902225664376
+"Kent","Gravesham","2",0.00637755371823657
+"Kent","Dartford","0",0.00707441295141101
+"Kent","Dartford","1",0.00684902225664376
+"Kent","Dartford","2",0.00637755371823657
+"Bexley","Bexley","0",0.126851194857431
+"Bexley","Bexley","1",0.0966357821770927
+"Bexley","Bexley","2",0.0809262677690739
+"Derbyshire","South Derbyshire","0",0.0173648057703835
+"Derbyshire","South Derbyshire","1",0.0147475617796602
+"Derbyshire","South Derbyshire","2",0.0124098713778037
+"Derby","Derby UA","0",0.0327113153437024
+"Derby","Derby UA","1",0.0286839650596279
+"Derby","Derby UA","2",0.0267760330578512
+"Leicestershire","North West Leicestershire","0",0.0242459501240348
+"Leicestershire","North West Leicestershire","1",0.0283248268373091
+"Leicestershire","North West Leicestershire","2",0.0294307037120452
+"Staffordshire","East Staffordshire","0",0.0122351000255182
+"Staffordshire","East Staffordshire","1",0.0114293567132602
+"Staffordshire","East Staffordshire","2",0.00974532905423976
+"Derbyshire","Amber Valley","0",0.0173648057703835
+"Derbyshire","Amber Valley","1",0.0147475617796602
+"Derbyshire","Amber Valley","2",0.0124098713778037
+"Derbyshire","Derbyshire Dales","0",0.0173648057703835
+"Derbyshire","Derbyshire Dales","1",0.0147475617796602
+"Derbyshire","Derbyshire Dales","2",0.0124098713778037
+"Derbyshire","Bolsover","0",0.0173648057703835
+"Derbyshire","Bolsover","1",0.0147475617796602
+"Derbyshire","Bolsover","2",0.0124098713778037
+"Derbyshire","North East Derbyshire","0",0.0173648057703835
+"Derbyshire","North East Derbyshire","1",0.0147475617796602
+"Derbyshire","North East Derbyshire","2",0.0124098713778037
+"Derbyshire","Erewash","0",0.0173648057703835
+"Derbyshire","Erewash","1",0.0147475617796602
+"Derbyshire","Erewash","2",0.0124098713778037
+"County Durham","County Durham UA","0",0.0318316314173503
+"County Durham","County Durham UA","1",0.0249725108899556
+"County Durham","County Durham UA","2",0.0240742254940082
+"Gateshead","Gateshead","0",0.0555391637783448
+"Gateshead","Gateshead","1",0.0467961457236108
+"Gateshead","Gateshead","2",0.0466316884708396
+"Sunderland","Sunderland","0",0.0309221434721646
+"Sunderland","Sunderland","1",0.0354824322225466
+"Sunderland","Sunderland","2",0.0408987493348977
+"North Yorkshire","Richmondshire","0",0.0191591594973199
+"North Yorkshire","Richmondshire","1",0.0154684050164462
+"North Yorkshire","Richmondshire","2",0.0165291726189662
+"Darlington","Darlington UA","0",0.0696313071698838
+"Darlington","Darlington UA","1",0.0497333036658078
+"Darlington","Darlington UA","2",0.0625355327188354
+"North Yorkshire","Hambleton","0",0.0191591594973199
+"North Yorkshire","Hambleton","1",0.0154684050164462
+"North Yorkshire","Hambleton","2",0.0165291726189662
+"Nottinghamshire","Bassetlaw","0",0.0134615384615385
+"Nottinghamshire","Bassetlaw","1",0.0134177526038752
+"Nottinghamshire","Bassetlaw","2",0.0124030992346658
+"Doncaster","Doncaster","0",0.0420013087230913
+"Doncaster","Doncaster","1",0.03449248167361
+"Doncaster","Doncaster","2",0.0285996325557488
+"North Yorkshire","Selby","0",0.0191591594973199
+"North Yorkshire","Selby","1",0.0154684050164462
+"North Yorkshire","Selby","2",0.0165291726189662
+"East Riding of Yorkshire","East Riding of Yorkshire UA","0",0.0279641295763086
+"East Riding of Yorkshire","East Riding of Yorkshire UA","1",0.0250321883527551
+"East Riding of Yorkshire","East Riding of Yorkshire UA","2",0.0242143740935658
+"North Lincolnshire","North Lincolnshire UA","0",0.0320337312656427
+"North Lincolnshire","North Lincolnshire UA","1",0.0348562536575966
+"North Lincolnshire","North Lincolnshire UA","2",0.0338034870537702
+"Lincolnshire","West Lindsey","0",0.0168080791717833
+"Lincolnshire","West Lindsey","1",0.0147790682674859
+"Lincolnshire","West Lindsey","2",0.0157529441133648
+"North East Lincolnshire","North East Lincolnshire UA","0",0.0460014009734193
+"North East Lincolnshire","North East Lincolnshire UA","1",0.0341766183982434
+"North East Lincolnshire","North East Lincolnshire UA","2",0.0359395269526055
+"Lincolnshire","East Lindsey","0",0.0168080791717833
+"Lincolnshire","East Lindsey","1",0.0147790682674859
+"Lincolnshire","East Lindsey","2",0.0157529441133648
+"Dorset","North Dorset","0",0.0284680392980397
+"Dorset","North Dorset","1",0.0232062976818653
+"Dorset","North Dorset","2",0.0226532393330883
+"Dorset","West Dorset","0",0.0284680392980397
+"Dorset","West Dorset","1",0.0232062976818653
+"Dorset","West Dorset","2",0.0226532393330883
+"Dorset","Weymouth and Portland","0",0.0284680392980397
+"Dorset","Weymouth and Portland","1",0.0232062976818653
+"Dorset","Weymouth and Portland","2",0.0226532393330883
+"Devon","East Devon","0",0.00886970854273952
+"Devon","East Devon","1",0.00836385231372488
+"Devon","East Devon","2",0.00655188502454733
+"Worcestershire","Wyre Forest","0",0.0172789508240598
+"Worcestershire","Wyre Forest","1",0.0151875109017966
+"Worcestershire","Wyre Forest","2",0.0146519075330388
+"Staffordshire","South Staffordshire","0",0.0122351000255182
+"Staffordshire","South Staffordshire","1",0.0114293567132602
+"Staffordshire","South Staffordshire","2",0.00974532905423976
+"Shropshire","Shropshire UA","0",0.0333492405352071
+"Shropshire","Shropshire UA","1",0.0402526684583016
+"Shropshire","Shropshire UA","2",0.0377054019850128
+"Worcestershire","Malvern Hills","0",0.0172789508240598
+"Worcestershire","Malvern Hills","1",0.0151875109017966
+"Worcestershire","Malvern Hills","2",0.0146519075330388
+"Waltham Forest","Waltham Forest","0",0.0439244789843404
+"Waltham Forest","Waltham Forest","1",0.0464662917457062
+"Waltham Forest","Waltham Forest","2",0.0455939483308457
+"Tower Hamlets","Tower Hamlets","0",0.166754074160402
+"Tower Hamlets","Tower Hamlets","1",0.147800453514739
+"Tower Hamlets","Tower Hamlets","2",0.164155161078238
+"Redbridge","Redbridge","0",0.0576535926555833
+"Redbridge","Redbridge","1",0.0508972298745026
+"Redbridge","Redbridge","2",0.0557302839201518
+"Newham","Newham","0",0.107983137523094
+"Newham","Newham","1",0.0954768846314036
+"Newham","Newham","2",0.102897761878072
+"Hackney","Hackney","0",0.120589679614684
+"Hackney","Hackney","1",0.122325161453571
+"Hackney","Hackney","2",0.144426588750913
+"Islington","Islington","0",0.190481927296134
+"Islington","Islington","1",0.137832958339382
+"Islington","Islington","2",0.157442646147564
+"Hertfordshire","Broxbourne","0",0.0285199591829057
+"Hertfordshire","Broxbourne","1",0.0231383665753636
+"Hertfordshire","Broxbourne","2",0.0244769058292189
+"Enfield","Enfield","0",0.0326651570498401
+"Enfield","Enfield","1",0.0312124236109294
+"Enfield","Enfield","2",0.0326708089470852
+"Hertfordshire","Hertsmere","0",0.0285199591829057
+"Hertfordshire","Hertsmere","1",0.0231383665753636
+"Hertfordshire","Hertsmere","2",0.0244769058292189
+"Barnet","Barnet","0",0.0448279492230717
+"Barnet","Barnet","1",0.0419799411092699
+"Barnet","Barnet","2",0.0499028283655876
+"Devon","Exeter","0",0.00886970854273952
+"Devon","Exeter","1",0.00836385231372488
+"Devon","Exeter","2",0.00655188502454733
+"Devon","Mid Devon","0",0.00886970854273952
+"Devon","Mid Devon","1",0.00836385231372488
+"Devon","Mid Devon","2",0.00655188502454733
+"Devon","North Devon","0",0.00886970854273952
+"Devon","North Devon","1",0.00836385231372488
+"Devon","North Devon","2",0.00655188502454733
+"Devon","Torridge","0",0.00886970854273952
+"Devon","Torridge","1",0.00836385231372488
+"Devon","Torridge","2",0.00655188502454733
+"Devon","West Devon","0",0.00886970854273952
+"Devon","West Devon","1",0.00836385231372488
+"Devon","West Devon","2",0.00655188502454733
+"Cornwall","Cornwall UA","0",0.0203064798013242
+"Cornwall","Cornwall UA","1",0.0197368429873534
+"Cornwall","Cornwall UA","2",0.018382057924339
+"Devon","Teignbridge","0",0.00886970854273952
+"Devon","Teignbridge","1",0.00836385231372488
+"Devon","Teignbridge","2",0.00655188502454733
+"Blackpool","Blackpool UA","0",0.0226475934903047
+"Blackpool","Blackpool UA","1",0.0222639023406965
+"Blackpool","Blackpool UA","2",0.024481157687477
+"Lancashire","Wyre","0",0.00777939889644899
+"Lancashire","Wyre","1",0.0061691694924114
+"Lancashire","Wyre","2",0.00657798867779473
+"Lancashire","Fylde","0",0.00777939889644899
+"Lancashire","Fylde","1",0.0061691694924114
+"Lancashire","Fylde","2",0.00657798867779473
+"Gloucestershire","Stroud","0",0.0259730103211159
+"Gloucestershire","Stroud","1",0.0250977198219512
+"Gloucestershire","Stroud","2",0.0245938420341041
+"Unspecified","Gloucester","2",0.487281920039949
+"Gloucestershire","Gloucester","0",0.0259730103211159
+"Gloucestershire","Gloucester","1",0.0250977198219512
+"Gloucestershire","Gloucester","2",0.0245938420341041
+"Gloucestershire","Forest of Dean","0",0.0259730103211159
+"Gloucestershire","Forest of Dean","1",0.0250977198219512
+"Gloucestershire","Forest of Dean","2",0.0245938420341041
+"Gloucestershire","Tewkesbury","0",0.0259730103211159
+"Gloucestershire","Tewkesbury","1",0.0250977198219512
+"Gloucestershire","Tewkesbury","2",0.0245938420341041
+"Gloucestershire","Cheltenham","0",0.0259730103211159
+"Gloucestershire","Cheltenham","1",0.0250977198219512
+"Gloucestershire","Cheltenham","2",0.0245938420341041
+"Gloucestershire","Cotswold","0",0.0259730103211159
+"Gloucestershire","Cotswold","1",0.0250977198219512
+"Gloucestershire","Cotswold","2",0.0245938420341041
+"Surrey","Waverley","0",0.0132068422720173
+"Surrey","Waverley","1",0.0142539768157939
+"Surrey","Waverley","2",0.0145130518807934
+"Hampshire","Hart","0",0.0154611691630368
+"Hampshire","Hart","1",0.0124749288678228
+"Hampshire","Hart","2",0.0110976195155219
+"Hampshire","East Hampshire","0",0.0154611691630368
+"Hampshire","East Hampshire","1",0.0124749288678228
+"Hampshire","East Hampshire","2",0.0110976195155219
+"Hampshire","Rushmoor","0",0.0154611691630368
+"Hampshire","Rushmoor","1",0.0124749288678228
+"Hampshire","Rushmoor","2",0.0110976195155219
+"Surrey","Guildford","0",0.0132068422720173
+"Surrey","Guildford","1",0.0142539768157939
+"Surrey","Guildford","2",0.0145130518807934
+"Surrey","Surrey Heath","0",0.0132068422720173
+"Surrey","Surrey Heath","1",0.0142539768157939
+"Surrey","Surrey Heath","2",0.0145130518807934
+"Surrey","Woking","0",0.0132068422720173
+"Surrey","Woking","1",0.0142539768157939
+"Surrey","Woking","2",0.0145130518807934
+"Surrey","Runnymede","0",0.0132068422720173
+"Surrey","Runnymede","1",0.0142539768157939
+"Surrey","Runnymede","2",0.0145130518807934
+"West Sussex","Chichester","0",0.0098628582107253
+"West Sussex","Chichester","1",0.00960503129841281
+"West Sussex","Chichester","2",0.0101917083890033
+"Bracknell Forest","Bracknell Forest UA","0",0.11765093680366
+"Bracknell Forest","Bracknell Forest UA","1",0.126561278389047
+"Bracknell Forest","Bracknell Forest UA","2",0.125196059209881
+"Brent","Brent","0",0.0572776449562148
+"Brent","Brent","1",0.0568200324069661
+"Brent","Brent","2",0.0654935116131161
+"Harrow","Harrow","0",0.045222615700692
+"Harrow","Harrow","1",0.0428670814067676
+"Harrow","Harrow","2",0.0434468855569439
+"Hillingdon","Hillingdon","0",0.0617100303336083
+"Hillingdon","Hillingdon","1",0.046198438660741
+"Hillingdon","Hillingdon","2",0.0548616151007053
+"Hertfordshire","Three Rivers","0",0.0285199591829057
+"Hertfordshire","Three Rivers","1",0.0231383665753636
+"Hertfordshire","Three Rivers","2",0.0244769058292189
+"Calderdale","Calderdale","0",0.0349549634077688
+"Calderdale","Calderdale","1",0.0424231934471167
+"Calderdale","Calderdale","2",0.0449177013885201
+"North Yorkshire","Harrogate","0",0.0191591594973199
+"North Yorkshire","Harrogate","1",0.0154684050164462
+"North Yorkshire","Harrogate","2",0.0165291726189662
+"Buckinghamshire","Wycombe","0",0.0482186817550759
+"Buckinghamshire","Wycombe","1",0.0328817297455007
+"Buckinghamshire","Wycombe","2",0.0316239067570747
+"Buckinghamshire","Chiltern","0",0.0482186817550759
+"Buckinghamshire","Chiltern","1",0.0328817297455007
+"Buckinghamshire","Chiltern","2",0.0316239067570747
+"Buckinghamshire","Aylesbury Vale","0",0.0482186817550759
+"Buckinghamshire","Aylesbury Vale","1",0.0328817297455007
+"Buckinghamshire","Aylesbury Vale","2",0.0316239067570747
+"Buckinghamshire","South Bucks","0",0.0482186817550759
+"Buckinghamshire","South Bucks","1",0.0328817297455007
+"Buckinghamshire","South Bucks","2",0.0316239067570747
+"Herefordshire, County of","Herefordshire, County of UA","0",0.0298291064825395
+"Herefordshire, County of","Herefordshire, County of UA","1",0.0272479042283079
+"Herefordshire, County of","Herefordshire, County of UA","2",0.0287945162646637
+"Kingston upon Hull, City of","Kingston upon Hull, City of UA","0",0.0408368667046587
+"Kingston upon Hull, City of","Kingston upon Hull, City of UA","1",0.0346163948772826
+"Kingston upon Hull, City of","Kingston upon Hull, City of UA","2",0.0341029543470621
+"Barking and Dagenham","Barking and Dagenham","0",0.108670239130638
+"Barking and Dagenham","Barking and Dagenham","1",0.0941583895179598
+"Barking and Dagenham","Barking and Dagenham","2",0.0966660959793475
+"Suffolk","Suffolk Coastal","0",0.0209443500902056
+"Suffolk","Suffolk Coastal","1",0.0184887243299447
+"Suffolk","Suffolk Coastal","2",0.016236111971785
+"Suffolk","Ipswich","0",0.0209443500902056
+"Suffolk","Ipswich","1",0.0184887243299447
+"Suffolk","Ipswich","2",0.016236111971785
+"Suffolk","Mid Suffolk","0",0.0209443500902056
+"Suffolk","Mid Suffolk","1",0.0184887243299447
+"Suffolk","Mid Suffolk","2",0.016236111971785
+"Suffolk","Waveney","0",0.0209443500902056
+"Suffolk","Waveney","1",0.0184887243299447
+"Suffolk","Waveney","2",0.016236111971785
+"Norfolk","South Norfolk","0",0.0119778132467366
+"Norfolk","South Norfolk","1",0.0141171872573157
+"Norfolk","South Norfolk","2",0.0149377145560596
+"Norfolk","Breckland","0",0.0119778132467366
+"Norfolk","Breckland","1",0.0141171872573157
+"Norfolk","Breckland","2",0.0149377145560596
+"Norfolk","King's Lynn and West Norfolk","0",0.0119778132467366
+"Norfolk","King's Lynn and West Norfolk","1",0.0141171872573157
+"Norfolk","King's Lynn and West Norfolk","2",0.0149377145560596
+"Surrey","Elmbridge","0",0.0132068422720173
+"Surrey","Elmbridge","1",0.0142539768157939
+"Surrey","Elmbridge","2",0.0145130518807934
+"Kingston upon Thames","Kingston upon Thames","0",0.0701166019275231
+"Kingston upon Thames","Kingston upon Thames","1",0.0645574434290444
+"Kingston upon Thames","Kingston upon Thames","2",0.0572128490594487
+"Richmond upon Thames","Richmond upon Thames","0",0.0972248131896399
+"Richmond upon Thames","Richmond upon Thames","1",0.0844120142947638
+"Richmond upon Thames","Richmond upon Thames","2",0.0841316304380581
+"Surrey","Epsom and Ewell","0",0.0132068422720173
+"Surrey","Epsom and Ewell","1",0.0142539768157939
+"Surrey","Epsom and Ewell","2",0.0145130518807934
+"Surrey","Mole Valley","0",0.0132068422720173
+"Surrey","Mole Valley","1",0.0142539768157939
+"Surrey","Mole Valley","2",0.0145130518807934
+"Liverpool","Liverpool","0",0.036503500706776
+"Liverpool","Liverpool","1",0.030457882167802
+"Liverpool","Liverpool","2",0.029137877482145
+"Sefton","Sefton","0",0.0156103682715882
+"Sefton","Sefton","1",0.0165364577436812
+"Sefton","Sefton","2",0.0164230836913203
+"Knowsley","Knowsley","0",0.0858074896956071
+"Knowsley","Knowsley","1",0.0790525977574363
+"Knowsley","Knowsley","2",0.0862681694141234
+"St. Helens","St. Helens","0",0.0484704399432783
+"St. Helens","St. Helens","1",0.0405613369820377
+"St. Helens","St. Helens","2",0.0422335600907029
+"Lancashire","West Lancashire","0",0.00777939889644899
+"Lancashire","West Lancashire","1",0.0061691694924114
+"Lancashire","West Lancashire","2",0.00657798867779473
+"Lancashire","Chorley","0",0.00777939889644899
+"Lancashire","Chorley","1",0.0061691694924114
+"Lancashire","Chorley","2",0.00657798867779473
+"Cumbria","South Lakeland","0",0.0361635318073353
+"Cumbria","South Lakeland","1",0.0322649086171681
+"Cumbria","South Lakeland","2",0.0300471327154454
+"Cumbria","Barrow-in-Furness","0",0.0361635318073353
+"Cumbria","Barrow-in-Furness","1",0.0322649086171681
+"Cumbria","Barrow-in-Furness","2",0.0300471327154454
+"Lancashire","Lancaster","0",0.00777939889644899
+"Lancashire","Lancaster","1",0.0061691694924114
+"Lancashire","Lancaster","2",0.00657798867779473
+"Leicestershire","Charnwood","0",0.0242459501240348
+"Leicestershire","Charnwood","1",0.0283248268373091
+"Leicestershire","Charnwood","2",0.0294307037120452
+"Nottinghamshire","Rushcliffe","0",0.0134615384615385
+"Nottinghamshire","Rushcliffe","1",0.0134177526038752
+"Nottinghamshire","Rushcliffe","2",0.0124030992346658
+"Leicestershire","Melton","0",0.0242459501240348
+"Leicestershire","Melton","1",0.0283248268373091
+"Leicestershire","Melton","2",0.0294307037120452
+"Rutland","Rutland UA","0",0.148037330442724
+"Rutland","Rutland UA","1",0.159243837306515
+"Rutland","Rutland UA","2",0.161041370760503
+"Leicestershire","Harborough","0",0.0242459501240348
+"Leicestershire","Harborough","1",0.0283248268373091
+"Leicestershire","Harborough","2",0.0294307037120452
+"Northamptonshire","Kettering","0",0.0178184753502736
+"Northamptonshire","Kettering","1",0.0130309829572139
+"Northamptonshire","Kettering","2",0.0127277354420377
+"Northamptonshire","Corby","0",0.0178184753502736
+"Northamptonshire","Corby","1",0.0130309829572139
+"Northamptonshire","Corby","2",0.0127277354420377
+"Leicester","Leicester UA","0",0.0324877930510501
+"Leicester","Leicester UA","1",0.0262339844570468
+"Leicester","Leicester UA","2",0.0221068135335302
+"Leicestershire","Oadby and Wigston","0",0.0242459501240348
+"Leicestershire","Oadby and Wigston","1",0.0283248268373091
+"Leicestershire","Oadby and Wigston","2",0.0294307037120452
+"Leicestershire","Blaby","0",0.0242459501240348
+"Leicestershire","Blaby","1",0.0283248268373091
+"Leicestershire","Blaby","2",0.0294307037120452
+"Lincolnshire","Lincoln","0",0.0168080791717833
+"Lincolnshire","Lincoln","1",0.0147790682674859
+"Lincolnshire","Lincoln","2",0.0157529441133648
+"Lincolnshire","North Kesteven","0",0.0168080791717833
+"Lincolnshire","North Kesteven","1",0.0147790682674859
+"Lincolnshire","North Kesteven","2",0.0157529441133648
+"Luton","Luton UA","0",0.0736169464512195
+"Luton","Luton UA","1",0.0627316139464576
+"Luton","Luton UA","2",0.0651863633308905
+"Central Bedfordshire","Central Bedfordshire UA","0",0.0610553820913577
+"Central Bedfordshire","Central Bedfordshire UA","1",0.0499784432726429
+"Central Bedfordshire","Central Bedfordshire UA","2",0.0429444836007802
+"Manchester","Manchester","0",0.0349817099634199
+"Manchester","Manchester","1",0.0355753912521804
+"Manchester","Manchester","2",0.0367346839359419
+"Trafford","Trafford","0",0.0396359282912916
+"Trafford","Trafford","1",0.0329963029098213
+"Trafford","Trafford","2",0.0355273120605733
+"Rochdale","Rochdale","0",0.0329275801051164
+"Rochdale","Rochdale","1",0.0320949571148486
+"Rochdale","Rochdale","2",0.03359608605903
+"Salford","Salford","0",0.0347736062354971
+"Salford","Salford","1",0.0375034002990882
+"Salford","Salford","2",0.0409012591325493
+"Wigan","Wigan","0",0.0521433782744297
+"Wigan","Wigan","1",0.0557735828948385
+"Wigan","Wigan","2",0.0543328764218618
+"Tameside","Tameside","0",0.133356154335175
+"Tameside","Tameside","1",0.124161590329207
+"Tameside","Tameside","2",0.12627677553234
+"Oldham","Oldham","0",0.0369381021543222
+"Oldham","Oldham","1",0.0366056957696952
+"Oldham","Oldham","2",0.0389008351634913
+"Kent","Swale","0",0.00707441295141101
+"Kent","Swale","1",0.00684902225664376
+"Kent","Swale","2",0.00637755371823657
+"Medway","Medway UA","0",0.0385647118935781
+"Medway","Medway UA","1",0.0303452303407381
+"Medway","Medway UA","2",0.033641624623403
+"Kent","Tonbridge and Malling","0",0.00707441295141101
+"Kent","Tonbridge and Malling","1",0.00684902225664376
+"Kent","Tonbridge and Malling","2",0.00637755371823657
+"Kent","Maidstone","0",0.00707441295141101
+"Kent","Maidstone","1",0.00684902225664376
+"Kent","Maidstone","2",0.00637755371823657
+"Milton Keynes","Milton Keynes UA","0",0.0436523674179831
+"Milton Keynes","Milton Keynes UA","1",0.0419396398125051
+"Milton Keynes","Milton Keynes UA","2",0.0462150926918038
+"Bedford","Bedford UA","0",0.0493955608402695
+"Bedford","Bedford UA","1",0.0432910416602326
+"Bedford","Bedford UA","2",0.0448161391094885
+"Haringey","Haringey","0",0.084221134666557
+"Haringey","Haringey","1",0.0568779627702625
+"Haringey","Haringey","2",0.0697514792899408
+"Unspecified","Enfield","2",0.487281920039949
+"North Tyneside","North Tyneside","0",0.052423551852684
+"North Tyneside","North Tyneside","1",0.0483899850938298
+"North Tyneside","North Tyneside","2",0.0540297650666651
+"Newcastle upon Tyne","Newcastle upon Tyne","0",0.0656420990896478
+"Newcastle upon Tyne","Newcastle upon Tyne","1",0.0518677278676181
+"Newcastle upon Tyne","Newcastle upon Tyne","2",0.052624623316502
+"Northumberland","Northumberland UA","0",0.0255554885255865
+"Northumberland","Northumberland UA","1",0.0214995585586152
+"Northumberland","Northumberland UA","2",0.0237435716129368
+"South Tyneside","South Tyneside","0",0.0510254952030566
+"South Tyneside","South Tyneside","1",0.0436069900903934
+"South Tyneside","South Tyneside","2",0.0473192850824781
+"Nottingham","Nottingham UA","0",0.0424026838576001
+"Nottingham","Nottingham UA","1",0.0324994211351365
+"Nottingham","Nottingham UA","2",0.0319101706098596
+"Nottinghamshire","Gedling","0",0.0134615384615385
+"Nottinghamshire","Gedling","1",0.0134177526038752
+"Nottinghamshire","Gedling","2",0.0124030992346658
+"Nottinghamshire","Newark and Sherwood","0",0.0134615384615385
+"Nottinghamshire","Newark and Sherwood","1",0.0134177526038752
+"Nottinghamshire","Newark and Sherwood","2",0.0124030992346658
+"Nottinghamshire","Ashfield","0",0.0134615384615385
+"Nottinghamshire","Ashfield","1",0.0134177526038752
+"Nottinghamshire","Ashfield","2",0.0124030992346658
+"Nottinghamshire","Broxtowe","0",0.0134615384615385
+"Nottinghamshire","Broxtowe","1",0.0134177526038752
+"Nottinghamshire","Broxtowe","2",0.0124030992346658
+"Nottinghamshire","Mansfield","0",0.0134615384615385
+"Nottinghamshire","Mansfield","1",0.0134177526038752
+"Nottinghamshire","Mansfield","2",0.0124030992346658
+"Lincolnshire","South Kesteven","0",0.0168080791717833
+"Lincolnshire","South Kesteven","1",0.0147790682674859
+"Lincolnshire","South Kesteven","2",0.0157529441133648
+"Northamptonshire","East Northamptonshire","0",0.0178184753502736
+"Northamptonshire","East Northamptonshire","1",0.0130309829572139
+"Northamptonshire","East Northamptonshire","2",0.0127277354420377
+"Northamptonshire","Northampton","0",0.0178184753502736
+"Northamptonshire","Northampton","1",0.0130309829572139
+"Northamptonshire","Northampton","2",0.0127277354420377
+"Northamptonshire","South Northamptonshire","0",0.0178184753502736
+"Northamptonshire","South Northamptonshire","1",0.0130309829572139
+"Northamptonshire","South Northamptonshire","2",0.0127277354420377
+"Northamptonshire","Wellingborough","0",0.0178184753502736
+"Northamptonshire","Wellingborough","1",0.0130309829572139
+"Northamptonshire","Wellingborough","2",0.0127277354420377
+"Norfolk","Broadland","0",0.0119778132467366
+"Norfolk","Broadland","1",0.0141171872573157
+"Norfolk","Broadland","2",0.0149377145560596
+"Norfolk","North Norfolk","0",0.0119778132467366
+"Norfolk","North Norfolk","1",0.0141171872573157
+"Norfolk","North Norfolk","2",0.0149377145560596
+"Norfolk","Norwich","0",0.0119778132467366
+"Norfolk","Norwich","1",0.0141171872573157
+"Norfolk","Norwich","2",0.0149377145560596
+"Norfolk","Great Yarmouth","0",0.0119778132467366
+"Norfolk","Great Yarmouth","1",0.0141171872573157
+"Norfolk","Great Yarmouth","2",0.0149377145560596
+"Ealing","Ealing","0",0.0499462716616637
+"Ealing","Ealing","1",0.0466138933672496
+"Ealing","Ealing","2",0.0491716206178065
+"Camden","Camden","0",0.151931778628611
+"Camden","Camden","1",0.143424036281179
+"Camden","Camden","2",0.155621344851853
+"Westminster","Westminster","0",0.13030526499641
+"Westminster","Westminster","1",0.178108116357865
+"Westminster","Westminster","2",0.263023703859905
+"Oxfordshire","South Oxfordshire","0",0.0402716283967858
+"Oxfordshire","South Oxfordshire","1",0.0383180226732461
+"Oxfordshire","South Oxfordshire","2",0.0352125323781183
+"Oxfordshire","Vale of White Horse","0",0.0402716283967858
+"Oxfordshire","Vale of White Horse","1",0.0383180226732461
+"Oxfordshire","Vale of White Horse","2",0.0352125323781183
+"Oxfordshire","Cherwell","0",0.0402716283967858
+"Oxfordshire","Cherwell","1",0.0383180226732461
+"Oxfordshire","Cherwell","2",0.0352125323781183
+"Oxfordshire","West Oxfordshire","0",0.0402716283967858
+"Oxfordshire","West Oxfordshire","1",0.0383180226732461
+"Oxfordshire","West Oxfordshire","2",0.0352125323781183
+"Oxfordshire","Oxford","0",0.0402716283967858
+"Oxfordshire","Oxford","1",0.0383180226732461
+"Oxfordshire","Oxford","2",0.0352125323781183
+"Lincolnshire","South Holland","0",0.0168080791717833
+"Lincolnshire","South Holland","1",0.0147790682674859
+"Lincolnshire","South Holland","2",0.0157529441133648
+"Peterborough","Peterborough UA","0",0.0981531222429174
+"Peterborough","Peterborough UA","1",0.082313432393707
+"Peterborough","Peterborough UA","2",0.0688092289832032
+"Cambridgeshire","Fenland","0",0.0219492506455408
+"Cambridgeshire","Fenland","1",0.019984201700894
+"Cambridgeshire","Fenland","2",0.0201337506402993
+"Cambridgeshire","Huntingdonshire","0",0.0219492506455408
+"Cambridgeshire","Huntingdonshire","1",0.019984201700894
+"Cambridgeshire","Huntingdonshire","2",0.0201337506402993
+"Lincolnshire","Boston","0",0.0168080791717833
+"Lincolnshire","Boston","1",0.0147790682674859
+"Lincolnshire","Boston","2",0.0157529441133648
+"Plymouth","Plymouth UA","0",0.0170184874179681
+"Plymouth","Plymouth UA","1",0.0175004778012393
+"Plymouth","Plymouth UA","2",0.017830313239847
+"Devon","South Hams","0",0.00886970854273952
+"Devon","South Hams","1",0.00836385231372488
+"Devon","South Hams","2",0.00655188502454733
+"Hampshire","Havant","0",0.0154611691630368
+"Hampshire","Havant","1",0.0124749288678228
+"Hampshire","Havant","2",0.0110976195155219
+"Hampshire","Gosport","0",0.0154611691630368
+"Hampshire","Gosport","1",0.0124749288678228
+"Hampshire","Gosport","2",0.0110976195155219
+"Hampshire","Fareham","0",0.0154611691630368
+"Hampshire","Fareham","1",0.0124749288678228
+"Hampshire","Fareham","2",0.0110976195155219
+"Hampshire","Winchester","0",0.0154611691630368
+"Hampshire","Winchester","1",0.0124749288678228
+"Hampshire","Winchester","2",0.0110976195155219
+"Portsmouth","Portsmouth UA","0",0.077724901268947
+"Portsmouth","Portsmouth UA","1",0.0543352131280801
+"Portsmouth","Portsmouth UA","2",0.0443564948801166
+"Unspecified","Chichester","2",0.487281920039949
+"Isle of Wight","Isle of Wight UA","0",0.0315509321850056
+"Isle of Wight","Isle of Wight UA","1",0.0297400361763315
+"Isle of Wight","Isle of Wight UA","2",0.0284720399655948
+"Lancashire","South Ribble","0",0.00777939889644899
+"Lancashire","South Ribble","1",0.0061691694924114
+"Lancashire","South Ribble","2",0.00657798867779473
+"Lancashire","Preston","0",0.00777939889644899
+"Lancashire","Preston","1",0.0061691694924114
+"Lancashire","Preston","2",0.00657798867779473
+"Wokingham","Wokingham UA","0",0.0578004009900833
+"Wokingham","Wokingham UA","1",0.057343182077228
+"Wokingham","Wokingham UA","2",0.0542293052859421
+"West Berkshire","West Berkshire UA","0",0.111432706222865
+"West Berkshire","West Berkshire UA","1",0.107452110200708
+"West Berkshire","West Berkshire UA","2",0.113362007799846
+"Reading","Reading UA","0",0.0705373785445172
+"Reading","Reading UA","1",0.0749741495543876
+"Reading","Reading UA","2",0.0788298568141501
+"Hampshire","Basingstoke and Deane","0",0.0154611691630368
+"Hampshire","Basingstoke and Deane","1",0.0124749288678228
+"Hampshire","Basingstoke and Deane","2",0.0110976195155219
+"West Sussex","Crawley","0",0.0098628582107253
+"West Sussex","Crawley","1",0.00960503129841281
+"West Sussex","Crawley","2",0.0101917083890033
+"Havering","Havering","0",0.0362228933321517
+"Havering","Havering","1",0.0308497054032858
+"Havering","Havering","2",0.0321704725042103
+"Thurrock","Thurrock UA","0",0.164470699432892
+"Thurrock","Thurrock UA","1",0.108730574584754
+"Thurrock","Thurrock UA","2",0.108809530024974
+"Sheffield","Sheffield","0",0.0248149012802788
+"Sheffield","Sheffield","1",0.0224332746918824
+"Sheffield","Sheffield","2",0.0232031390095166
+"Rotherham","Rotherham","0",0.0390503440971753
+"Rotherham","Rotherham","1",0.0314220907232388
+"Rotherham","Rotherham","2",0.027945221973878
+"Barnsley","Barnsley","0",0.0319819866722199
+"Barnsley","Barnsley","1",0.0275073423946452
+"Barnsley","Barnsley","2",0.0288464732932633
+"Derbyshire","Chesterfield","0",0.0173648057703835
+"Derbyshire","Chesterfield","1",0.0147475617796602
+"Derbyshire","Chesterfield","2",0.0124098713778037
+"Greenwich","Greenwich","0",0.120327048822925
+"Greenwich","Greenwich","1",0.113442079001026
+"Greenwich","Greenwich","2",0.106988655681847
+"Lambeth","Lambeth","0",0.0503634572898642
+"Lambeth","Lambeth","1",0.0556646434414039
+"Lambeth","Lambeth","2",0.0570437184400896
+"Southwark","Southwark","0",0.090197088574989
+"Southwark","Southwark","1",0.112568201555267
+"Southwark","Southwark","2",0.11804774651952
+"Unspecified","Lambeth","2",0.487281920039949
+"Hertfordshire","Stevenage","0",0.0285199591829057
+"Hertfordshire","Stevenage","1",0.0231383665753636
+"Hertfordshire","Stevenage","2",0.0244769058292189
+"Stockport","Stockport","0",0.0511152671352942
+"Stockport","Stockport","1",0.0463203017832647
+"Stockport","Stockport","2",0.0437351969178379
+"Derbyshire","High Peak","0",0.0173648057703835
+"Derbyshire","High Peak","1",0.0147475617796602
+"Derbyshire","High Peak","2",0.0124098713778037
+"Slough","Slough UA","0",0.163977211033418
+"Slough","Slough UA","1",0.124752842313396
+"Slough","Slough UA","2",0.144111570247934
+"Windsor and Maidenhead","Windsor and Maidenhead UA","0",0.0414175825132047
+"Windsor and Maidenhead","Windsor and Maidenhead UA","1",0.0462131779680507
+"Windsor and Maidenhead","Windsor and Maidenhead UA","2",0.0540523517918863
+"Swindon","Swindon UA","0",0.0620435098878162
+"Swindon","Swindon UA","1",0.0441706010928285
+"Swindon","Swindon UA","2",0.0447317853060286
+"Southampton","Southampton UA","0",0.0399654676854044
+"Southampton","Southampton UA","1",0.0340763146311169
+"Southampton","Southampton UA","2",0.032829937503798
+"Hampshire","Test Valley","0",0.0154611691630368
+"Hampshire","Test Valley","1",0.0124749288678228
+"Hampshire","Test Valley","2",0.0110976195155219
+"Hampshire","Eastleigh","0",0.0154611691630368
+"Hampshire","Eastleigh","1",0.0124749288678228
+"Hampshire","Eastleigh","2",0.0110976195155219
+"Southend-on-Sea","Southend-on-Sea UA","0",0.0268352235991141
+"Southend-on-Sea","Southend-on-Sea UA","1",0.0242066916726168
+"Southend-on-Sea","Southend-on-Sea UA","2",0.0257356185101715
+"Essex","Rochford","0",0.0266353716589067
+"Essex","Rochford","1",0.0229731611612898
+"Essex","Rochford","2",0.023505421495836
+"Essex","Castle Point","0",0.0266353716589067
+"Essex","Castle Point","1",0.0229731611612898
+"Essex","Castle Point","2",0.023505421495836
+"Staffordshire","Staffordshire Moorlands","0",0.0122351000255182
+"Staffordshire","Staffordshire Moorlands","1",0.0114293567132602
+"Staffordshire","Staffordshire Moorlands","2",0.00974532905423976
+"Staffordshire","Stafford","0",0.0122351000255182
+"Staffordshire","Stafford","1",0.0114293567132602
+"Staffordshire","Stafford","2",0.00974532905423976
+"Stoke-on-Trent","Stoke-on-Trent UA","0",0.0415612970437095
+"Stoke-on-Trent","Stoke-on-Trent UA","1",0.0294026225707283
+"Stoke-on-Trent","Stoke-on-Trent UA","2",0.0289920477743539
+"Kensington and Chelsea","Kensington and Chelsea","0",0.137233560090703
+"Kensington and Chelsea","Kensington and Chelsea","1",0.113130361014233
+"Kensington and Chelsea","Kensington and Chelsea","2",0.125407202216066
+"Wandsworth","Wandsworth","0",0.0834597895531705
+"Wandsworth","Wandsworth","1",0.0786459936390684
+"Wandsworth","Wandsworth","2",0.0961779613111575
+"Hammersmith and Fulham","Hammersmith and Fulham","0",0.247150556921867
+"Hammersmith and Fulham","Hammersmith and Fulham","1",0.249461669088426
+"Hammersmith and Fulham","Hammersmith and Fulham","2",0.262878494558448
+"Somerset","Taunton Deane","0",0.0384070901135448
+"Somerset","Taunton Deane","1",0.0390834017896759
+"Somerset","Taunton Deane","2",0.0425902740709469
+"Somerset","West Somerset","0",0.0384070901135448
+"Somerset","West Somerset","1",0.0390834017896759
+"Somerset","West Somerset","2",0.0425902740709469
+"Telford and Wrekin","Telford and Wrekin UA","0",0.0582080844740837
+"Telford and Wrekin","Telford and Wrekin UA","1",0.0562596954898018
+"Telford and Wrekin","Telford and Wrekin UA","2",0.0587401421716424
+"Kent","Tunbridge Wells","0",0.00707441295141101
+"Kent","Tunbridge Wells","1",0.00684902225664376
+"Kent","Tunbridge Wells","2",0.00637755371823657
+"East Sussex","Rother","0",0.00708105138719419
+"East Sussex","Rother","1",0.00741929618300282
+"East Sussex","Rother","2",0.00775024335782168
+"East Sussex","Hastings","0",0.00708105138719419
+"East Sussex","Hastings","1",0.00741929618300282
+"East Sussex","Hastings","2",0.00775024335782168
+"Torbay","Torbay UA","0",0.0149721088409923
+"Torbay","Torbay UA","1",0.0182866997710446
+"Torbay","Torbay UA","2",0.0204144815277699
+"Isles of Scilly","Isles of Scilly UA","0",1
+"Isles of Scilly","Isles of Scilly UA","1",1
+"Isles of Scilly","Isles of Scilly UA","2",1
+"Redcar and Cleveland","Redcar and Cleveland UA","0",0.035555626101173
+"Redcar and Cleveland","Redcar and Cleveland UA","1",0.0459101070154578
+"Redcar and Cleveland","Redcar and Cleveland UA","2",0.0482283230273145
+"Middlesbrough","Middlesbrough UA","0",0.0556717495352241
+"Middlesbrough","Middlesbrough UA","1",0.042449114939137
+"Middlesbrough","Middlesbrough UA","2",0.0473038000017403
+"Stockton-on-Tees","Stockton-on-Tees UA","0",0.0534960839920793
+"Stockton-on-Tees","Stockton-on-Tees UA","1",0.0464750293524751
+"Stockton-on-Tees","Stockton-on-Tees UA","2",0.0448982920701104
+"Hartlepool","Hartlepool UA","0",0.0638984843486192
+"Hartlepool","Hartlepool UA","1",0.0555947361894724
+"Hartlepool","Hartlepool UA","2",0.0594683364839319
+"Hounslow","Hounslow","0",0.0986218836565097
+"Hounslow","Hounslow","1",0.0882581449354552
+"Hounslow","Hounslow","2",0.0859723952905407
+"Surrey","Spelthorne","0",0.0132068422720173
+"Surrey","Spelthorne","1",0.0142539768157939
+"Surrey","Spelthorne","2",0.0145130518807934
+"Warrington","Warrington UA","0",0.0583410574000358
+"Warrington","Warrington UA","1",0.0502894700699455
+"Warrington","Warrington UA","2",0.0523887154584345
+"Halton","Halton UA","0",0.0733301191464213
+"Halton","Halton UA","1",0.0930486154706291
+"Halton","Halton UA","2",0.11065851580525
+"Hertfordshire","Watford","0",0.0285199591829057
+"Hertfordshire","Watford","1",0.0231383665753636
+"Hertfordshire","Watford","2",0.0244769058292189
+"Wakefield","Wakefield","0",0.0334223250525698
+"Wakefield","Wakefield","1",0.0282945654001191
+"Wakefield","Wakefield","2",0.0271395117604551
+"Worcestershire","Wychavon","0",0.0172789508240598
+"Worcestershire","Wychavon","1",0.0151875109017966
+"Worcestershire","Wychavon","2",0.0146519075330388
+"Worcestershire","Worcester","0",0.0172789508240598
+"Worcestershire","Worcester","1",0.0151875109017966
+"Worcestershire","Worcester","2",0.0146519075330388
+"Staffordshire","Cannock Chase","0",0.0122351000255182
+"Staffordshire","Cannock Chase","1",0.0114293567132602
+"Staffordshire","Cannock Chase","2",0.00974532905423976
+"Wolverhampton","Wolverhampton","0",0.0321638551031379
+"Wolverhampton","Wolverhampton","1",0.0303378513499197
+"Wolverhampton","Wolverhampton","2",0.0261805716604824
+"York","York UA","0",0.0785702377017636
+"York","York UA","1",0.0714049689312559
+"York","York UA","2",0.0601233852021449
+"North Yorkshire","Scarborough","0",0.0191591594973199
+"North Yorkshire","Scarborough","1",0.0154684050164462
+"North Yorkshire","Scarborough","2",0.0165291726189662
+"North Yorkshire","Ryedale","0",0.0191591594973199
+"North Yorkshire","Ryedale","1",0.0154684050164462
+"North Yorkshire","Ryedale","2",0.0165291726189662
