@@ -242,5 +242,5 @@ cqc_geo = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_h
       write.csv(entries_exits, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/two/entries_exits_rates_ditricts_waves2.csv", row.names = FALSE)
       
       
-      summary(entry_rate)
+
       
