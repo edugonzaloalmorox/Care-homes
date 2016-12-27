@@ -1,9 +1,13 @@
 # Create a calendar heatmap
 
-#     It is necessary to transform the data and obtain information relative to weeks, months, 
+#     - it is necessary to transform the data and obtain information relative to weeks, months, 
 #     day of the week, etc.. 
-#     
-#     Heatmap makes faceting by month and year 
+#     - heatmap makes faceting by month and year 
+#
+#
+# created:  06/12/2016
+# modified: 09/12/2016
+# @EduGonzalo
 
 
 library(rio)
@@ -11,6 +15,8 @@ library(dplyr)
 library(lubridate)     
 library(ggplot2)
 library(RColorBrewer) 
+library(scales)
+library(gridExtra)
 
 
 # Load data and select locations
@@ -40,14 +46,13 @@ library(RColorBrewer)
 # Heatmap 
         
         entries <- ggplot(cqc, aes(week_month, DoW, fill = n)) +
-          geom_tile(colour = "white") + scale_fill_gradient(limits=c(0,10), low = "white", high = muted("grey") , na.value = "#336699") +
-          facet_grid(year ~ month ) + theme(legend.position='none') + 
-          labs(title = "Registrations of care homes 2013 - 2016") +
+          geom_tile(colour = "white") + scale_fill_gradient('Number of \n entries', limits=c(0,10), breaks = c(0, 5, 10, 20), low = "white", high = muted("grey") , na.value = "#336699") +
+          facet_grid(year ~ month ) +  
+          labs(title = "Registrations of care homes (sample analysis") +
           xlab("Week of Month") +
           ylab("")
         
         # limits  help to determine 
         entries
         
-       
-        
+    

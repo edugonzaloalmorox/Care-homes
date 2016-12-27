@@ -126,8 +126,7 @@ prices_entries = import("/Users/Personas/My Cloud/PhD _october_2016/market entry
       
       write.csv(s4, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/two/test_prices_entries_instruments.csv", row.names = FALSE)
       
-      
-      
+ 
       
      
       
