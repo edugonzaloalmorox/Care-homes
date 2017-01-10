@@ -45,15 +45,19 @@ sectors.df.england = sectors.df %>% filter(DESCRIPTIO != "Council Area (Scotland
 
 head(sectors.df.england)
 
+# sample with entry rates 
 sm = s1 %>% select(wave, oslaua, lpa.1, mean_price, entry_rate_nat)
 
-data_mapping = left_join(sectors.df.england, sm, by = c("CODE" = "oslaua" ))
+sm = sm %>% group_by(oslaua) %>% mutate(mean.entry = mean(entry_rate_nat)) %>% as.data.frame()
+sm.unique = sm %>% distinct(oslaua, lpa.1, mean.entry)
+
+data_mapping = left_join(sectors.df.england, sm.unique, by = c("CODE" = "oslaua" ))
 
 data_mapping = unique(data_mapping)
 
 
 library(Hmisc)
-data_mapping$var =  with(data_mapping, cut2(entry_rate_nat, g = 7))
+data_mapping$var =  with(data_mapping, cut2(mean.entry, g = 5))
                                    
 
 
@@ -83,21 +87,27 @@ names_na = data_mapping %>% filter(is.na(wave))
       
       data_3 = rbind(data_2, names_na_3)
 
-# map 1
-map_1 = ggplot(data_1, aes(long, lat, group=group)) +
-  scale_fill_brewer(type = "seq", palette = "Blues", na.value = "grey", name = "Entry rate (%)") +
+# map_mean
+map_mean = ggplot(data_mapping, aes(long, lat, group=group)) +
+  scale_fill_brewer(type = "seq", palette = "Blues", na.value = "grey", name = "Entry rate (%)", 
+                    labels=c("0 - 4.1",
+                             "4.1 - 5.8", 
+                             "5.8 - 7.6",
+                             "7.6 - 9.5",
+                             "9.5 - 23.6")) +
   geom_polygon(aes(fill = var))+ 
   coord_equal() +
   geom_path(colour = "black", size =0.25) +
-  labs(x = "Longitude", y = "Latitude", title = "Average entry rate (wave 1)")
+  labs(x = "Longitude", y = "Latitude")
   
 
-ggsave("map_1.png", map_1, scale = 0.5)
+ggsave("map_mean.png", map_mean, scale = 0.5)
 
 
 # map 2
 map_2 = ggplot(data_2, aes(long, lat, group=group)) +
-  scale_fill_brewer(type = "seq", palette = "Blues", na.value = "grey", name = "Entry rate (%)") +
+  scale_fill_brewer(type = "seq", palette = "Blues", na.value = "grey", name = "Entry rate (%)",
+                    labels=c("0", "3", "3 - 5", "5 - 9", "9 - 16", "16 - 68")) +
   geom_polygon(aes(fill = var))+ 
   coord_equal() +
   geom_path(colour = "black", size =0.25) +
@@ -108,7 +118,8 @@ ggsave("map_2.png", map_2, scale = 0.5)
 
 # map 3
 map_3 = ggplot(data_3, aes(long, lat, group=group)) +
-  scale_fill_brewer(type = "seq", palette = "Blues", na.value = "grey", name = "Entry rate (%)") +
+  scale_fill_brewer(type = "seq", palette = "Blues", na.value = "grey", name = "Entry rate (%)",
+                    labels=c("0", "1.7 - 3", "3 - 5", "5 - 9", "9 - 16", "16 - 68")) +
   geom_polygon(aes(fill = var))+ 
   coord_equal() +
   geom_path(colour = "black", size =0.25) +

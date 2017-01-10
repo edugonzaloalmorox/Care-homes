@@ -1,7 +1,7 @@
 # ONS - population
 
 # created: 5/10/2016
-# modified: 6/10/2016
+# modified: 10/01/2017
 # author: Edu Gonzalo (Newcastle University)
 # ------------------------------------------
 
@@ -56,6 +56,41 @@ library(lubridate)
           colnames(population) <- name.population
           
           write.csv(population, "total.population.csv", row.names = FALSE)
+          
+          # insert information regarding people older than 65 
+          
+          # data - raw: nomis_pop_5yearageband -  population estimates 
+           
+          library(tidyr)
+          library(dplyr)
+          
+          pop65 = read.csv("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/one/nomis_pop_5yearageband.csv", 
+                           sep = ";",
+                           header = TRUE)
+          
+          
+          n.old = c("la", "code", "X2011", "X2012", "X2013", "X2014", "X2015")
+          
+          names(pop65) <- n.old
+          
+          
+          pop = pop65 %>% gather(year, people_old65, X2011:X2015) %>% arrange(la)
+          
+          # select years corresponding to the waves
+          
+          anos = c("X2011", "X2013", "X2015")
+          
+          pop_65 = pop %>% filter( year %in% anos) %>% mutate(wave = ifelse(year == "X2011", 1, 
+                                                                            ifelse(year == "X2013", 2, 
+                                                                                   ifelse(year == "X2015", 3, "other"))))
+          
+          
+          
+          p65 = pop_65 %>% select(-year, lpa = la, oslaua = code)
+          
+          
+          test = left_join(s1, p65, by = c("lpa", "wave", "oslaua"))
+          
           
                     
                   
