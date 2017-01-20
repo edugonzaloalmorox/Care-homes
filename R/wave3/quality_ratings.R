@@ -1,8 +1,8 @@
 # Quality ratings 
 # Created 19/01/2017
-# Modified 19/01/2017
+# Modified 20/01/2017
 
-# Cleaning the data concerning the ratings of quality inspections
+# Cleaning the data concerning the ratings of quality inspections and counting the proporitons 
 
 
 
@@ -89,9 +89,25 @@ quality_apr16 = read.csv("/Users/Personas/My Cloud/PhD _october_2016/market entr
                                                      ifelse(date >= "2015-06-01" & date <= "2016-02-29" , "2",
                                                           ifelse(date >= "2016-03-01", "3", "4"))))
         
+        # expand the panel - those who are inspected in a certain period remain with this rating 
+          
+          
           
           write.csv(ratings, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/ratings.csv")
           
+          # geolocate ratings 
+      
+          cqc_geo = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/processed/geo.ch.postcodes.csv")   
           
+          ratings = ratings %>% mutate(post2 = gsub("[[:space:]]", "", Location.Post.Code)) %>% select(-V1)
+          
+          test = left_join(ratings, cqc_geo, by = c("post2" = "post2"))
+          
+      write.csv(test, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/geo_ratings.csv")
+          
+          
+          
+          
+         
           
     
