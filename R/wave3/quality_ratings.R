@@ -151,11 +151,14 @@ library(lubridate)
           df = prueba %>% group_by(Location.ID) %>% fill(Location.Name, Care.Home., Location.Post.Code,
                                                          Location.Local.Authority, Location.Region, Overall.Rating, date, category) %>% select(-wave2)
           
-          write.csv(df, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/ratings_extended.csv", row.names = FALSE)
+ write.csv(df, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/ratings_extended.csv", row.names = FALSE)
+ 
+ 
 # ------------------          
 # Geolocate ratings 
 # ------------------        
           
+ 
           cqc_geo = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/processed/geo.ch.postcodes.csv")   
           
           ratings = ratings %>% mutate(post2 = gsub("[[:space:]]", "", Location.Post.Code)) %>% select(-V1)
@@ -165,8 +168,24 @@ library(lubridate)
       write.csv(test, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/geo_ratings.csv", row.names = FALSE)
           
           
+      # geolocate ratings expanded
+      ratings_exp = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/ratings_extended.csv")
+      
+      ratings_exp = ratings_exp %>% mutate(post2 = gsub("[[:space:]]", "", Location.Post.Code))
+      
+      geo_ratings = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/geo_ratings.csv")
+      
+      ons_geo  = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/processed/ons.postcode.csv")  
+      
+       
+       geo = geo_ratings %>% select(Location.ID, X, Y, oslaua, post2)
           
+          ext_geo = left_join(ratings_exp, geo, by  = c("Location.ID", "post2"))
+   
+          ext_geo = unique(ext_geo)
           
-         
+          check = ext_geo %>% filter(is.na(oslaua)) 
+          # note: there are three care homes that cannot be geolocated: TF75FN, SY129DY, HD21NH
           
+          write.csv(ext_geo, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/geo_ratings_extended.csv", row.names = FALSE)  
     
