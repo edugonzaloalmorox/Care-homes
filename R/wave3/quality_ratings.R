@@ -101,14 +101,6 @@ library(lubridate)
           
           ratings = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/ratings.csv") 
           
-          
-          count_ratings = ratings %>% 
-            group_by(Location.ID, Location.Region, date, wave, category) %>% 
-            tally() %>% 
-            mutate(inspections_wave = sum(n)) %>% 
-            ungroup() %>%
-            group_by(Location.ID) %>% mutate(inspections_total = sum(n))
-          
           # get the last for each wave (if there are more than one in one wave I take the last obsthe observation in the wave )
           
           last = ratings  %>% 
@@ -188,4 +180,19 @@ library(lubridate)
           # note: there are three care homes that cannot be geolocated: TF75FN, SY129DY, HD21NH
           
           write.csv(ext_geo, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/geo_ratings_extended.csv", row.names = FALSE)  
-    
+  
+# ------------------------------       
+# Count the ratings by category 
+# ------------------------------
+          
+          count_ratings = ext_geo %>% 
+            group_by(oslaua, Location.Region, wave, category) %>% 
+            tally() %>%
+            mutate(inspections_oslaua_wave = sum(n)) %>% 
+            ungroup() %>%
+            group_by(oslaua) %>% mutate(inspections_oslaua_total = sum(n)) %>% select(oslaua:category, inspections_oslaua = n, inspections_oslaua_wave, inspections_oslaua_total)
+         
+          write.csv(count_ratings, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/count_ratings.csv", row.names = FALSE)
+ 
+           
+          
