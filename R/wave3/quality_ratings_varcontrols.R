@@ -47,19 +47,35 @@
        library(tidyr)
        prueba = prueba %>% mutate_each(funs(as.factor), oslaua, Location.Region, wave, category)
        
-      
+       prueba$row <- 1:nrow(prueba)
        prueba_wide = prueba %>% spread(category,inspections_oslaua) %>% as.data.frame()
        
        prueba_wide = prueba_wide %>% group_by(oslaua, Location.Region, wave) %>% fill(Bad, Good, Outstanding)
        prueba.w = prueba_wide %>% group_by(oslaua, Location.Region, wave) %>% filter(row_number() == n()) %>% as.data.frame()
        
+       # link the number of inspections 
+       
+    
        prueba_wide$wave = as.numeric(prueba_wide$wave) 
        benefits$wave = as.numeric(benefits$wave) 
        
        
        test = left_join(prueba.w, benefits, by = c("oslaua" = "la_code", "wave" = "wave"))
+      
        # there are less observations in test because there are some local authorities that were not inspected during the first wave
-
+       # create a new data frame and consider inexisting data (NA) as 0
+       
+       # new data frame
+       
+       levels.care.homes = unique(test$oslaua)
+       new_data = data.frame(oslaua = rep(levels.care.homes, 3), wave = rep(1:3, length(levels.care.homes))) %>% arrange(oslaua, wave)
+       new_data$oslaua = as.character(new_data$oslaua)
+       
+       test.1 = left_join(new_data, test, by = c("oslaua", "wave")) %>% select(-row)
+       
+       test.1 = test.1 %>% fill(Location.Region) %>% mutate(Outstanding = ifelse(is.na(Outstanding), 0, Outstanding),
+                                                                                  Good = ifelse(is.na(Good), 0, Good),
+                                                                                  Bad = ifelse(is.na(Bad), 0, Bad))
        
 # ------------ 
 # house prices 
@@ -75,43 +91,58 @@
        av.prices = av.prices %>% mutate(wave = ifelse(year.trans == 2014, 1,
                                                       ifelse(year.trans == 2015, 2,
                                                       ifelse(year.trans == 2016, 3, "other")))) %>% select(-year.trans)
+       
+# link entries and exits 
+      
+       entries_exits = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/entries.exits_district_wave3.csv")
+       
+       test.3 = left_join(test.1, entries_exits, by = c("oslaua", "wave"))
+      
 
 # -------------------------------------------       
 #link house prices with benefits and ratings
 # --------------------------------------------
        
        av.prices$wave = as.numeric(av.prices$wave)
-       test$wave = as.numeric(test$wave)
+       test.1$wave = as.numeric(test.1$wave)
        
-       test.1 = left_join(test, av.prices, by = c("oslaua", "wave"))
+       test.2 = left_join(test.3, av.prices, by = c("oslaua", "wave"))
        
        # select information from the parent sample (test_3)
        
-      redtest3 = test_3 %>% select(wave:dclg.code, cum_homes, total_pop:trafsqtrend, hhi, people_old65, local.authority)
+      redtest3 = test_3 %>% select(wave, oslaua, total_pop:trafsqtrend, hhi, people_old65, local.authority)
       
       
       # link, order and clean redundant variables
       # ------------------------------------------
       
-      test.2 = left_join(test.1, redtest3, by = c("oslaua", "wave")) %>% select(wave, oslaua, lpa = lpa.x, -lpa.y, la:dclg.code, Location.Region, local.authority, Bad:people_old65)
+      test.5 = left_join(test.2, redtest3, by = c("oslaua", "wave")) 
+  
        
       # create variables of interest
       
-      test.2 = test.2 %>% mutate_each(funs(as.numeric), total_pop, total_old, jsa_fem, carers_allowance, pension_credits, income_support) %>%
+      test.5 = test.5 %>% mutate_each(funs(as.numeric), total_pop, total_old, jsa_fem, carers_allowance, pension_credits, income_support) %>%
                                       mutate(prop.old.la = (total_old/total_pop),
                                  prop.jsa.la = (jsa_fem/total_pop),
                                  prop.allowance.la = (carers_allowance/total_pop),
                                  prop.pension.la = (pension_credits/total_pop),
                                  prop.income.sup.la = (income_support/total_pop))
        
-      test.2 = test.2 %>% mutate(Outstanding = ifelse(is.na(Outstanding), 0, Outstanding))
+      test.2 = test.2 %>% mutate(Outstanding = ifelse(is.na(Outstanding), 0, Outstanding),
+                                 Good = ifelse(is.na(Good), 0, Good),
+                                 Bad = ifelse(is.na(Bad), 0, Bad))
       
       # proportion rated care homes 
       
-      test.2 = test.2 %>% mutate(prop.good = (Good/cum_homes), 
+      test.5 = test.5 %>% mutate(inspected = Bad+Good+Outstanding,
+                                  prop.good = (Good/cum_homes), 
                                  prop.bad = (Bad/cum_homes),
-                                 prop.outstanding = (Outstanding/cum_homes)) %>% select(-date)
+                                 prop.outstanding = (Outstanding/cum_homes)) 
+      
+      
+      
+     
        
        
-      write.csv(test.2, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/test_4.csv", row.names = FALSE)
+      write.csv(test.5, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/test_4.1.csv", row.names = FALSE)
       

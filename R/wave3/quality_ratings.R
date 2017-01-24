@@ -85,7 +85,7 @@ library(lubridate)
           
           # 1 - Oct 2014 - May 2015
           # 2 - June 2015 - February 2016
-          # 3 - February 2016 - September 2016
+          # 3 - March 2016 - September 2016
           
           
           ratings = ratings %>% mutate(wave = ifelse(date <="2015-05-31", "1",
@@ -101,7 +101,7 @@ library(lubridate)
           
           ratings = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/ratings.csv") 
           
-          # get the last for each wave (if there are more than one in one wave I take the last obsthe observation in the wave )
+          # get the last for each wave (if there are more than one in one wave I take the last the observation in the wave )
           
           last = ratings  %>% 
             group_by(Location.ID, wave) %>% filter(row_number() == n()) %>% as.data.frame()
@@ -194,5 +194,9 @@ library(lubridate)
          
           write.csv(count_ratings, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/count_ratings.csv", row.names = FALSE)
  
-           
+#--------------------------------------
+# Count the total number of care homes
+#--------------------------------------
+     
+               
           
