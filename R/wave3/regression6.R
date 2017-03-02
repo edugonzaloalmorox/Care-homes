@@ -3,7 +3,7 @@
 # Use of another outcomes - quality rating
 
 
-test.5 = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/test_4.csv")
+test.5 = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/test_4.1.csv")
 
 
 test.5 =  test.5 %>% mutate(good_pop = ((Good/people_old65)*1000),
@@ -14,10 +14,6 @@ test.5 =  test.5 %>% mutate(good_pop = ((Good/people_old65)*1000),
 
 test_4 = test.5
 
-
-
-
-summary(test_4$price_av)
 
 test_4 = test_4 %>% mutate(log.price = log(price_av))
                            
@@ -154,8 +150,10 @@ test_4 = test_4 %>% mutate(log.price = log(price_av))
                 
                 summary(iv_outstanding_reform9404_regions, diagnostics = TRUE)
                 
-
+#########################
 # use counties as control   
+#########################
+                
                 
                 # County districts --oscty
                 
@@ -164,7 +162,17 @@ test_4 = test_4 %>% mutate(log.price = log(price_av))
                 counties = cqc %>% select(oslaua, oscty) %>% unique()       
                 
                 
-                test_4 = left_join(test_4, counties, by = "oslaua")
+                test_4 = left_join(test.3, counties, by = "oslaua")
+              
+                # ols
+                
+                linear_county = plm(homes_pop ~ log.price + prop.old.la + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + location.region -1, data=test_4 , index = c("lpa", "wave"), model = "pooling")
+                
+                summary(linear_county, diagnostics = TRUE)
+                
+                
+               
+                # labour votes
                 
                 iv_good_lab_counties = ivreg(good_pop ~ log.price + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + oscty -1| labourvotes1983 + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la +hhi + oscty -1,   data=test_4) 
                 summary(iv_good_lab_counties, diagnostics = TRUE)
@@ -176,5 +184,43 @@ test_4 = test_4 %>% mutate(log.price = log(price_av))
                 summary(iv_outstanding_lab_counties, diagnostics = TRUE)
                 
                 
-        
-        
+                # delay rates
+                
+                
+                iv_good_reform_counties = ivreg(good_pop ~ log.price + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + oscty -1| delchange_maj1 + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la +hhi + oscty -1,   data=test_4) 
+                summary(iv_good_reform_counties, diagnostics = TRUE)
+                
+                iv_bad_reform_counties = ivreg(bad_pop~ log.price + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + oscty -1| delchange_maj1 + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la +hhi + oscty -1,   data=test_4) 
+                summary(iv_bad_reform_counties, diagnostics = TRUE)
+                
+                iv_outstanding_reform_counties = ivreg(out_pop ~ log.price + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + oscty -1| delchange_maj1 + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la +hhi + oscty -1,   data=test_4) 
+                summary(iv_outstanding_reform_counties, diagnostics = TRUE)
+                
+                
+                # relationship of care homes are planning regulations 
+                
+
+                iv_tight_del = ivreg(homes_pop ~ refusal_maj_7908 + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + oscty -1|  delchange_maj1 + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la +hhi + oscty -1,   data=test_4) 
+                summary(iv_tight_del, diagnostics = TRUE)
+                
+                iv_tight_two = ivreg(homes_pop ~ refusal_maj_7908 + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + oscty -1|  labourvotes1983  + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la +hhi + oscty -1,   data=test_4) 
+                summary(iv_tight_two, diagnostics = TRUE)
+                
+                iv_tight_lab = ivreg(homes_pop ~ refusal_maj_7908 + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + oscty -1|    labourvotes1983 + delchange_maj1+ prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la +hhi + oscty -1,   data=test_4) 
+                summary(iv_tight_lab, diagnostics = TRUE)
+                
+        # ivreg2 
+                
+                county_iv_lab = ivreg2(homes_pop ~ log.price + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + oscty-1, endog="log.price",iv=c("labourvotes1983"),data=na.omit(test_4))
+                
+                county_iv_lab$weakidtest
+                county_iv_lab$endogeneity
+                county_iv_lab$overid
+                
+                county_iv_del = ivreg2(homes_pop ~ log.price + prop.allowance.la + prop.pension.la + prop.jsa.la + prop.income.sup.la + hhi + oscty-1, endog="log.price",iv=c("delchange_maj1"),data=na.omit(test_4))
+                
+                county_iv_del$results
+                county_iv_lab$weakidtest
+                county_iv_del$endogeneity
+                county_iv_del$overid
+                

@@ -97,5 +97,18 @@ share = str_split_fixed(clean$V11,",", 2) %>% as.data.frame() %>% select(proport
         
         write.csv(labour2015, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/processed/labour2015.csv", row.names = FALSE)
         write.csv(labour_conservative_UKIP2015, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/processed/labour_conservative_UKIP2015.csv", row.names = FALSE)
-        
-
+      
+# link electoral data with data on care homes - different geographies may be challenging
+  test5 = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/three/test5.csv")
+  labour2015 = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/processed/labour2015.csv")
+  
+  # there may be councils that have more than one constituency - average in these cases 
+  
+  labour2015$share = as.numeric(labour2015$share)
+  
+  lab15 =  labour2015 %>% group_by(oslaua) %>% mutate(av.share15 = mean(share)) %>% select(av.share15, oslaua) 
+  lab15 = lab15 %>% group_by(oslaua) %>% unique %>% data.frame()
+  
+  
+  test6 = left_join(test5, lab15, by = "oslaua")
+  
