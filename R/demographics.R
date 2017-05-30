@@ -65,7 +65,7 @@ library(lubridate)
           library(dplyr)
           
           pop65 = read.csv("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/one/nomis_pop_5yearageband.csv", 
-                           sep = ";",
+                           sep = ",",
                            header = TRUE)
           
           
