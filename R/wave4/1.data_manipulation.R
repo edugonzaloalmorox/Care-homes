@@ -239,4 +239,71 @@ write.csv(df_ratings,"/Users/Personas/My Cloud/PhD _october_2016/market entry/ca
   
   write.csv(test5, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/care_homes_waves_complete.csv", row.names = FALSE)
   
+  ######################################################################
+  
+  
+  ######################################################################
+  
+  # ############ #
+  # Instruments  #
+  # ############ # 
+  
+# raw data from  replication materials Hilber and Vermeulen (2016)
+ instr = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/raw/data_LPA.dta")
+
+# select relevant information 
+  
+  info_inst = instr %>% select(lpa_code:county_pre_96, delchange_maj1, labourvotes1983, pop_density_1911_imp)
+  
+# data referred to each local authority
+  info_inst = unique(info_inst)
+  
+# select codes associated with the cqc
+  cqc_codes = cqc_geolocated %>% select(oslaua:la) %>% unique()
+  
+# link old and new information of local authorities  
+  instr_linked = left_join(cqc_codes, info_inst, by = c("old.la" = "lpa_code"))
+
+# counties that are reformed
+  instr_missing =  instr_linked %>% filter(is.na(delchange_maj1))
+  
+# select information for old counties
+# note: drop information corresponding to Isles of Scilly - there is not information available
+  
+  counties = c("Durham", "Cornwall", "Northumberland", "Shropshire", "Wiltshire")
+  
+  instr_counties = info_inst %>% filter(county_pre_96 %in% counties) %>% filter(lpa_name_2005on != "Isles of Scilly")
+  
+  counties_mean = instr_counties %>% group_by(county_pre_96) %>% 
+    mutate(av.delchange = mean(delchange_maj1),
+           av.labourvotes = mean(labourvotes1983),
+           av.pop_density = mean(pop_density_1911_imp)) %>% 
+    select(county_pre_96, av.delchange, av.labourvotes, av.pop_density) %>%
+           unique()
+  
+# create a "la" variable to merge with linked information based on instruments 
+  counties_mean = counties_mean %>% mutate(la = paste(county_pre_96, "UA", sep = " "))
+  counties_mean$la[counties_mean$la == "Durham UA"] <- "County Durham UA"
+  
+# merge linked information of the instruments and the missing
+  
+  instr_short = instr_linked %>% select(oslaua, la, delchange_maj1:pop_density_1911_imp)
+  
+  instr_test = left_join(instr_short, counties_mean, by = "la")
+  
+  # recode information on instruments and clean up 
+  
+  instr_test = instr_test %>% mutate(delchange_maj1 = ifelse(is.na(delchange_maj1), av.delchange, delchange_maj1),
+                                      labourvotes1983 = ifelse(is.na(labourvotes1983), av.labourvotes, labourvotes1983), 
+                                     pop_density_1911_imp = ifelse(is.na(pop_density_1911_imp), av.pop_density, pop_density_1911_imp)) %>%
+    select(oslaua:pop_density_1911_imp)
+                                     
+  instr_sample = instr_test %>% filter(!is.na(delchange_maj1))
+
+  # note: There are LAs that are not merged -  Cheshire East, Cheshire West, Central Bedforshire, Bedford and Isles of Scilly
+  
+  write.csv(instr_sample, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/instr_oslaua.csv", row.names = FALSE)
+  
+  
+  
   
