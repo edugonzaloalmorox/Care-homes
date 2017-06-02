@@ -304,6 +304,87 @@ write.csv(df_ratings,"/Users/Personas/My Cloud/PhD _october_2016/market entry/ca
   
   write.csv(instr_sample, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/instr_oslaua.csv", row.names = FALSE)
   
+
+  ######################################################################
   
   
+  ######################################################################
   
+  # ################### #
+  # Sample of analysis  #
+  # ################### # 
+  
+  # link all the information key variables: oslaua  and wave 
+  
+ # load information
+  entries = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/count_entries_exits_wave.csv")
+  beds = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/beds_waves_oslaua.csv")
+  ratings = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/ratings_waves_oslaua.csv")
+  population = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/population_waves_oslaua.csv")
+  house_prices = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/sum_prices_waves_oslaua.csv")
+  instr = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/instr_oslaua.csv")
+  labour_share15 = import("/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/processed/labour2015.csv")
+  
+  # link datasets
+    test6 =  left_join(entries, beds, by = c("oslaua", "wave"))
+  
+    test6 = left_join(test6, ratings, by = c("oslaua", "wave"))
+  
+    test6 = left_join(test6, population, by = c("oslaua", "wave")) 
+    
+  # instruments 
+    
+    test6 = left_join(test6, instr, by = "oslaua") 
+    test7 = test6 %>% filter(!is.na(delchange_maj1))
+  
+  # house prices 
+    
+    
+    # current prices
+    prices_waves = house_prices %>% filter(wave %in% c(3,4)) %>% select(wave, oslaua, geoavprice) %>% mutate(wave = ifelse(wave == 3, 1, ifelse(wave == 4, 2, NA)))
+    
+    test7 = left_join(test7, prices_waves, by = c("oslaua", "wave"))
+    
+    test7 = test7 %>% mutate(log_geoaverage = log(geoavprice))
+    
+
+    # lagged prices
+    
+    prices_waves =  house_prices %>% filter(wave %in% c(1,2)) %>% select(wave, oslaua, geoavprice) %>% rename(lag_geoavprice = geoavprice)
+    
+    test7 = left_join(test7, prices_waves, by = c("oslaua", "wave"))
+    
+    
+    # create logs
+    
+    test7 = test7 %>% mutate(lag_loggeoaverage = log(lag_geoavprice))
+    
+    
+# Create outcome variables 
+    
+    test7$population = as.numeric(test7$population)
+    test7 = test7 %>% group_by(wave, oslaua) %>% 
+      mutate(carehomespop = (care_homes/population)*1000,
+             goodpop = (Good/population)* 1000,
+             inadequatepop = (Inadequate/population)*1000,
+             outstandingpop = (Outstanding/population)*1000,
+             improvepop = (`Requires improvement`/population)*1000,
+             bad = ((Inadequate + `Requires improvement`)/population)*1000,
+             rate_outstanding = (Outstanding/care_homes)*100,
+             rate_inadequate = (Inadequate/care_homes)*100)
+
+# ############################
+# Contemporaneous Labour share
+##############################
+    
+    labour15 = labour_share15 %>% select(oslaua, share) %>% unique()
+    labour15$share = as.numeric(labour15$share)
+    
+    # get the average share in those oslauas that are repeated
+    labour15 = labour15 %>% group_by(oslaua) %>% mutate(avshare15 = mean(share)) %>% select(oslaua, avshare15)  %>% unique()
+    
+    
+    test8 = left_join(test7, labour15, by = "oslaua") %>% as.data.frame()
+  
+    write.csv(test8, "/Users/Personas/My Cloud/PhD _october_2016/market entry/care_homes/data/waves/five/care_homes_alloslauas_wave.csv", row.names = FALSE)
+    
