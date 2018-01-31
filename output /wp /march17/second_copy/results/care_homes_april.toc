@@ -1,0 +1,8 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Institutional background}{5}{section.2}
+\contentsline {section}{\numberline {3}Econometric framework}{8}{section.3}
+\contentsline {section}{\numberline {4}Results}{17}{section.4}
+\contentsline {subsection}{\numberline {4.1}House prices and market entries}{17}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Exploration of further channels}{20}{subsection.4.2}
+\contentsline {section}{\numberline {5}Conclusion}{22}{section.5}

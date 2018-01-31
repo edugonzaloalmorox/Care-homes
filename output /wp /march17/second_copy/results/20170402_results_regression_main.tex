@@ -1,0 +1,278 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[left=2.65cm,top=2.5cm,right=2.65cm,bottom=2.5cm]{geometry} 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{eqnarray}
+\usepackage{mathtools}
+\usepackage{amssymb} 
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{booktabs,caption}
+\usepackage[flushleft]{threeparttable}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{subfig}
+\usepackage{kpfonts}    % for nice fonts
+\usepackage{microtype} 
+\usepackage{booktabs}   % for nice tables
+\usepackage{bm}         % for bold math
+\usepackage{listings}   % for inserting code
+\usepackage{verbatim}   % useful for program listings
+\usepackage{color}  
+%\usepackage[colorlinks=true]{hyperref}%%TABLE % use for hypertext
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = black]{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{natbib}
+\renewcommand{\baselinestretch}{1.25}
+
+
+
+\begin{document}
+
+%+Title
+\title{\Huge{Market entry in the care homes sector\thanks{The authors are grateful for the comments received in WIPE workshop.}}}
+\author{Eduardo Gonzalo Almorox\thanks{Newcastle University. Barrack Road} \thanks{Corresponding author: \tt{e.gonzalo-almorox@newcastle.ac.uk} } \and Nils Braakmaann\footnotemark[2]
+ \and Volodymyr Bilotkchak\footnotemark[2] \and John Wildman\footnotemark[2]}
+
+
+\date{First version: January 2016\\ This version: March 2016}
+\maketitle
+
+\begin{abstract}
+This study investigates the effects of house prices in the English care homes market. 
+High house prices, as experienced currently in England, may disincentive the entry in
+ certain markets restricting the access to long term care services in these areas. Alternatively, 
+ these areas may also suppose business opportunity. We provide evidence in order to disentangle 
+ these effects. Our results suggest that higher house prices increase the rate care homes. 
+ Based on unique dataset that collates information from several sources our analysis exploits 
+ planning regulations to address empirical limitations associated with the house prices. Our findings
+  contribute to inform policy makers about the relationship between the long term care and housing markets. 
+\end{abstract}
+
+{{\bf{Keywords}}: Care homes, house prices, long-term care, England\\
+\bf{JEL}: R31, I12}
+
+\newpage
+\tableofcontents
+%\newpage
+%-Title
+
+
+\newpage
+\section{Introduction}
+\label{sec: intro}
+
+England has experienced the fastest growth in house prices amongst all OECD country during the last decades.
+This inflationary trend has had consequences for both households, materialised in the so called “house affordability crisis”, 
+and to less extent businesses. In this paper we investigate the relationship between the house prices 
+and the market structure of an industry that typically operates with low margins, the care homes 
+that provide long term care services. Our interest in the long term care is not trivial. Elements such as 
+the ageing of the population or some socioeconomic changes that include the inclusion of more women 
+in the labour force as well as the composition of different family structures, have shifted informal caregiving 
+towards more formal long term care provision. These patterns evidence the importance of this sector in the 
+forthcoming decades. Yet, despite the will of policy makers to design policies that preserve a sustainable 
+provision of long term care and that also ensure competitive market structures, there is limited evidence for
+ the design of these policies.  We aim at informing these policies by analysing the extent of the effect of high 
+ prices in the housing market on the entries in the market of care homes. 
+ 
+ \begin{table}[ht]
+\centering
+\caption{First stage results, dependent variable average house prices (log)}
+\label{table quality}
+\resizebox{\textwidth}{!}{% 
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+                                           & \multicolumn{4}{c}{Average house prices (log)}                       \\ \midrule
+                                    & Refusal rate & Delay change & Labour share & Population density 1911 \\
+                                \hline
+                                    & 3.142***     & -0.561***    & -2.312***    & 0.0001***               \\
+                                    & (0.1608)     & (0.0853)     & (0.34083)    & (0.0001)                \\
+Observations                        & 945          & 945          & 945          & 945                     \\
+F(excluded instruments)             & 206.50***    & 47.26***     & 58.04***     & 43.85***                \\
+\hline
+Cragg-Donald Wald F statistic       & 641.313      & 192.834      & 392.101      & 261.942                 \\
+Kleibergen-Paap Wald rk F statistic & 206.502      & 47.264       & 58.043       & 43.854                  \\
+Hansen J statistic                  & 5.458**      & 1.918        & 10.117***    &                         \\ \bottomrule               
+\end{tabular}}
+\begin{tablenotes}
+      \scriptsize
+      \item {\it{Notes}} All regressions include the following controls. Share of people 85+, 
+      Share of people receiving Attendance Allowance, Share of people with pension credits, 
+      Share of females claiming for Job Seekers Allowance, Share of adults with income 
+      support, 
+      Herfindahl-Hirschmann Index, share of Labour voters for 2015. All regressions include fixed effect controls at
+      county level. Robust standard errors in parentheses. Standard errors are clustered at local planning 
+      authority level. ***/**/*/$^{+}$ denote significance levels at 1\%, 5\%, 
+      10\% and 15\%. Standard errors are presented in parentheses. 
+    \end{tablenotes}
+\end{table}
+
+ \begin{table}[ht]
+\centering
+\caption{Second stage results, effects on care homes entry}
+\label{table quality}
+\resizebox{\textwidth}{!}{% 
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+                            & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} \\ \midrule
+Average house prices  (log) & -0.270***               & -0.0254                 & -0.332***               & -0.188**                & -0.414***               \\
+                            & (0.0597)                & (0.130)                 & (0.0965)                & (0.0938)                & (0.0913)                \\
+\hline
+Observations                & 945                     & 945                     & 945                     & 945                     & 945                     \\
+F                           & 51.27***                & 31.26***                & 11.80***                & 2.128                   & 20.45***                \\
+R-squared                   & 0.052                   & 0.184                   & 0.049                   & 0.053                   & 0.037                   \\ \bottomrule
+
+\end{tabular}}
+\begin{tablenotes}
+      \scriptsize
+      \item {\it{Notes}} All regressions include the following controls. Share of people 85+, 
+      Share of people receiving Attendance Allowance, Share of people with pension credits, 
+      Share of females claiming for Job Seekers Allowance, Share of adults with income 
+      support, 
+      Herfindahl-Hirschmann Index, share of Labour voters for 2015. All regressions include fixed effect controls at
+      county level. Robust standard errors in parentheses. Standard errors are clustered at local planning 
+      authority level. ***/**/*/$^{+}$ denote significance levels at 1\%, 5\%, 
+      10\% and 15\%. Standard errors are presented in parentheses. 
+    \end{tablenotes}
+\end{table}
+
+ \begin{table}[ht]
+\centering
+\caption{Robustness check, effects of lagged house prices on care home entry}
+\label{table quality}
+\resizebox{\textwidth}{!}{% 
+\begin{tabular}{@{}lcccccccc@{}}
+                                   & (1)       & (2)      & (3)       & (4)       & (5)       \\ \midrule
+Average lagged house price (log)          & -0.250*** & -0.022   & -0.357*** & -0.193*   & -0.469*** \\
+                                    & (0.039)   & (0.1286) & (0.107)   & (0.0994)  & (0.0994)  \\
+    \hline                     
+Observations                        & 945       & 945      & 945       & 945       & 945       \\
+F                                   & 41.73***  & 27.76*** & 38.93***  & 58.35***  & 34.60***  \\
+R-squared                           & 0.042     & 0.184    & 0.035     & 0.048     & 0.010     \\
+\hline
+Cragg-Donald Wald F statistic       &           &          & 157.422   & 384.978   & 202.022   \\
+Kleibergen-Paap Wald rk F statistic &           &          & 38.926    & 58.353    & 34.604   \\
+Hansen J statistic                  &           &          & 2.438     & 10.227*** &           \\ \bottomrule
+\end{tabular}}
+\begin{tablenotes}
+      \scriptsize
+      \item {\it{Notes}} All regressions include the following controls. Share of people 85+, 
+      Share of people receiving Attendance Allowance, Share of people with pension credits, 
+      Share of females claiming for Job Seekers Allowance, Share of adults with income 
+      support, 
+      Herfindahl-Hirschmann Index, share of Labour voters for 2015. All regressions include fixed effect controls at
+      county level. Robust standard errors in parentheses. Standard errors are clustered at local planning 
+      authority level. ***/**/*/$^{+}$ denote significance levels at 1\%, 5\%, 
+      10\% and 15\%. Standard errors are presented in parentheses. 
+    \end{tablenotes}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{Second stage results, effects of house prices on care homes entry}
+\label{table second_stage}
+\resizebox{\textwidth}{!}{% 
+\begin{tabular}{@{}lcccccccccc@{}}
+      \toprule
+                                    & \multicolumn{5}{c}{Top and bottom 5\% excluded}       & \multicolumn{5}{c}{London excluded}                   \\ \midrule
+                                    & (1)       & (2)      & (3)      & (4)      & (5)      & (6)       & (7)      & (8)      & (9)      & (10      \\
+                                    \hline
+Average lagged price (log)          & -0.148*** & 0.110    & -0.0105  & 0.0669   & -0.0906  & -0.232*** & 0.0968   & -0.360*  & 0.477    & -0.868** \\
+                                    & (0.0328)  & (0.0666) & (0.128)  & (0.115)  & (0.160)  & (0.0477)  & (0.122)  & (0.205)  & (0.532)  & (0.396)  \\
+                              \hline
+Observations                        & 851       & 851      & 851      & 851      & 851      & 849       & 849      & 849      & 849      & 849      \\
+F                                   & 20.21***  & 23.01*** & 61.49*** & 59.03*** & 81.00*** & 23.68***  & 24.31*** & 32.81*** & 12.08*** & 23.88*** \\
+R-squared                           & 0.023     & 0.171    & 0.020    & 0.020    & 0.020    & 0.027     & 0.167    & 0.019    & -0.179   & -0.177   \\
+\hline
+Cragg-Donald Wald F statistic       &           &          & 93.197   & 219.308  & 91.879   &           &          & 68.589   & 20.776   & 50.042   \\
+Kleibergen-Paap Wald rk F statistic &           &          & 61.494   & 59.034   & 80.996   &           &          & 32.808   & 12.080   & 23.880   \\
+Hansen J statistic                  &           &          & 0.452    & 5.641**  &          &           &          & 4.123**  & 6.329**  &          \\ \bottomrule
+\end{tabular}}
+\begin{tablenotes}
+      \scriptsize
+      \item {\it{Notes}} All regressions include the following controls. Share of people 85+, 
+      Share of people receiving Attendance Allowance, Share of people with pension credits, 
+      Share of females claiming for Job Seekers Allowance, Share of adults with income 
+      support, 
+      Herfindahl-Hirschmann Index, share of Labour voters for 2015. All regressions include fixed effect controls at
+      county level. Robust standard errors in parentheses. Standard errors are clustered at local planning 
+      authority level. ***/**/*/$^{+}$ denote significance levels at 1\%, 5\%, 
+      10\% and 15\%. Standard errors are presented in parentheses. 
+    \end{tablenotes}
+\end{table}
+
+
+\begin{table}[h!]
+\centering
+\caption{Second stage results, effects of house prices on care homes entry}
+\label{table second_stage}
+\resizebox{\textwidth}{!}{% 
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+                                    & (1)     & (2)      & (3)      & (4)      & (5)      \\ \midrule
+Per capita residential expenditure  & -0.133  & 0.292    & 0.903    & 0.363    & 0.891    \\
+                                    & (0.125) & (0.304)  & (0.620)  & (0.441)  & (0.632)  \\
+                        \hline
+Observations                        & 945     & 945      & 945      & 945      & 945      \\
+F                                   & 1.13    & 18.97*** & 32.39*** & 48.18*** & 46.74*** \\
+R-squared                           & 0.001   & 0.349    & 0.338    & 0.356    & 0.338    \\
+\hline
+Cragg-Donald Wald F statistic       &         &          & 239.469  & 315.479  & 423.757  \\
+Kleibergen-Paap Wald rk F statistic &         &          & 32.386   & 48.185   & 46.736   \\
+Hansen J statistic                  &         &          & 0.008    & 9.960*** &          \\ \bottomrule
+\end{tabular}}
+\begin{tablenotes}
+      \scriptsize
+      \item {\it{Notes}} All regressions include the following controls. Share of people 85+, 
+      Share of people receiving Attendance Allowance, Share of people with pension credits, 
+      Share of females claiming for Job Seekers Allowance, Share of adults with income 
+      support, 
+      Herfindahl-Hirschmann Index, share of Labour voters for 2015. All regressions include fixed effect controls at
+      county level. Robust standard errors in parentheses. Standard errors are clustered at local planning 
+      authority level. ***/**/*/$^{+}$ denote significance levels at 1\%, 5\%, 
+      10\% and 15\%. Standard errors are presented in parentheses. 
+    \end{tablenotes}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{Second stage results, effects of house prices on care homes entry}
+\label{table second_stage}
+\resizebox{\textwidth}{!}{% 
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+                                    & \multicolumn{5}{c}{Good quality care homes}          & \multicolumn{5}{c}{Bad quality care homes}             \\ \midrule
+                                    & (1)      & (2)      & (3)      & (4)      & (5)      & (6)       & (7)       & (8)      & (9)      & (10)     \\
+                                    \hline
+Quality rating                         & 0.155*** & 0.0776   & -0.0410  & 0.0800   & 0.0540   & 0.0324*** & 0.0581*** & 0.0177   & 0.0100   & 0.0281   \\
+                                    & (0.0421) & (0.0710) & (0.0847) & (0.0703) & (0.0989) & (0.00874) & (0.0162)  & (0.0214) & (0.0201) & (0.0272) \\
+                                    \hline
+Observations                        & 945      & 945      & 945      & 945      & 945      & 945       & 945       & 945      & 945      & 945      \\
+F                                   & 13.54*** & 44.12*** & 47.26*** & 58.04*** & 43.85*** & 13.71***  & 76.89***  & 47.26*** & 58.04*** & 43.85*** \\
+R-squared                           & 0.014    & 0.221    & -0.008   & 0.012    & 0.008    & 0.014     & 0.356     & 0.011    & 0.012    & 0.014    \\
+\hline
+Cragg-Donald Wald F statistic       &          &          & 192.834  & 392.10   & 261.942  &           &           & 192.83   & 392.101  & 261.942  \\
+Kleibergen-Paap Wald rk F statistic &          &          & 47.264   & 58.04    & 43.854   &           &           & 47.26    & 58.043   & 43.854   \\
+Hansen J statistic                  &          &          & 3.311*   & 0        &          &           &           & 0.880    & 0.595    &          \\ \bottomrule
+
+\end{tabular}}
+\begin{tablenotes}
+      \scriptsize
+      \item {\it{Notes}} All regressions include the following controls. Share of people 85+, 
+      Share of people receiving Attendance Allowance, Share of people with pension credits, 
+      Share of females claiming for Job Seekers Allowance, Share of adults with income 
+      support, 
+      Herfindahl-Hirschmann Index, share of Labour voters for 2015. All regressions include fixed effect controls at
+      county level. Robust standard errors in parentheses. Standard errors are clustered at local planning 
+      authority level. ***/**/*/$^{+}$ denote significance levels at 1\%, 5\%, 
+      10\% and 15\%. Standard errors are presented in parentheses. 
+    \end{tablenotes}
+\end{table}
+
+
+ 
+\end{document}

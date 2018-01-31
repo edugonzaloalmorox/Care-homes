@@ -1,0 +1,185 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[left=2.65cm,top=2.5cm,right=2.65cm,bottom=2.5cm]{geometry} 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{eqnarray}
+\usepackage{mathtools}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{amssymb} 
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{booktabs,caption}
+\usepackage[flushleft]{threeparttable}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{subfig}
+\usepackage{kpfonts}    % for nice fonts
+\usepackage{microtype} 
+\usepackage{booktabs}   % for nice tables
+\usepackage{bm}         % for bold math
+\usepackage{listings}   % for inserting code
+\usepackage{verbatim}   % useful for program listings
+\usepackage{color}  
+%\usepackage[colorlinks=true]{hyperref}%%TABLE % use for hypertext
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = black]{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{natbib}
+\renewcommand{\baselinestretch}{1.25}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{\baselineskip} 
+
+
+
+\begin{document}
+
+%+Title
+\title{}
+
+
+\date{}
+ \maketitle
+%
+%
+%
+%{{\bf{Keywords}}: Care homes, house prices, long-term care, England\\
+%\bf{JEL}: R31, I12}
+%
+%\newpage
+%\tableofcontents
+%\newpage
+
+
+
+%\newpage
+
+\subsection*{Specifications}
+
+
+
+The purpose of our analysis is to study empirically the effects of the house prices on the proportion of care homes in local
+  long term care markets. The main analysis is based on regressions that follow the baseline 
+specification:
+ 
+ \begin{eqnarray}
+\label{equation1}
+      C_{it} =\beta X_{it} + \alpha P_{it} + \epsilon_{it}
+ \end{eqnarray}
+
+ where $C$ is proportion of care homes per 1000 population over 65 in a local authority $i$ in a time period $t$,
+  $P_{it}$ is the average of the house prices and 
+ and $\epsilon$ represents an error term that is identically and independtly distributed.  $X_{it}$
+  represents a vector with different observable variables
+ that characterize the composition of local long term care markets and that we use as main controls in some 
+ of our specifications. 
+ 
+ The choice of these controls is guided by elements that characterize the composition of the demand 
+for long term care and its needs. Firstly, we include the proportion 
+  of people older than 85 and proportion of people that receive the attendance 
+  allowance\footnote{This benefit aims to support those people with physical disabilities in UK that live
+   independently and might require residential care services otherwise. } as proxies of the level 
+   of health dependency. Also, given the association between the financial needs and the funding
+    support determined by the means-test, we incorporate the proportion of people that receive some
+     sort of income support and the proportion of people that receive pension credits to reflect the payer 
+     composition within the local population. These variables have been previously used in the literature for these purposes 
+     \citep{darton2010slicing, forder2014}. Likewise, given that long term care is a labour intense activity,
+      we add the proportion of females that claim for job seekers’ allowance in order to get a proxy for unemployment.
+      
+      In addition to the former, we also include in $X$ a measure of the Herfindahl–Hirschman Index (HHI) to control for
+      the competition between care homes in the local market. In our case, the HHI is a measure of concentration that 
+      reflects the squared shares of beds across all the providers in a local market. The values range from
+       0 to 1 where higher values represent higher concentration and therefore less competition.  
+ 
+The parameter of interest, $\alpha$,  may be interpreted as a causal effect
+  of the house prices on the distribution of care homes, only if
+         $P_i$ is exogenous so that $Cov(P_{i}$,$\epsilon_{i}) = 0 $. Yet, a potential element that can lead 
+         to inconsistent estimations of $\alpha$ may be the presence of unobserved
+ variables that confound the effect of the house prices on the proportion of care homes.
+
+ For tackling with these problems we consider an instrumental variables approach and instrument the house prices with 
+instruments referred to the variation of 
+ restrictiveness in the planning regulations. The measure that we use is the 
+ rate of refusal of major projects. It is normally used in the literature and 
+ reflects the share of applications corresponding to projects that entail 10 or more 
+ dwelling that are rejected by a local authority during a year. 
+ 
+ A potential problem with this instrument is that is procyclical and this may 
+ entail endogeneity concerns. In order to address them we use two identification 
+ strategies based on the 
+ variation in the rate of delay of projects before and after a planning reform aimed at speeding up the planning processes 
+ and the share of local political power. The specific instruments that we use are the 
+change in the delay rate before and after the reform and the share of Labour 
+voters in the local authority. 
+
+In addition to the planning regulations, there may be other drivers that entail 
+restrictions in the supply of houses and thus may lead to increases in the house 
+prices. Physical constraints may be an example of those and should be included in the 
+estimation. We use the share of developed land to express the extent of physical 
+constraints. A potential limitation referred to this variable is that 
+  the availability (or scarcity) of this type of land can be the result of elements that 
+  also affect the house prices and therefore may imply endogeneity. For 
+  addressing this problem, the historic population density can be used as an 
+  instrument for identifying the share of developable land since it may show the 
+  early forms of agglomeration. I use the historic population density in 1911.
+
+Considering these caveats specification for estimating the first stage fitted 
+values of the house prices is expressed
+
+  \begin{eqnarray}
+\label{first stage}
+    P_{it} = \delta Z_{it} + \beta \chi_{it} + \eta_{i}+ \psi_{i} + u_{it} 
+ \end{eqnarray}
+
+ where $Z$ refers to the variable associated with the planning regulation (e.g. the rate of refusal of major projects), $\chi$  
+ to the variable referred to the physical constraint (e.g. share of developed land) and $\psi$ binary variables 
+ for each planning authority. In addition to the specification developed by 
+\cite{hilber2016supply}, we include and additional control $\eta$ corresponding to the 
+share of Labour voters for each local authority in the last national election in June 
+2015. 
+ 
+\section{Tables}
+
+\begin{table}[h]
+\centering
+\caption{First stage results, dependent variable house prices (log)}
+\label{table first_stage}
+\resizebox{\textwidth}{!}{% 
+\begin{tabular}{@{}lccc@{}}
+\toprule
+
+                                    &  & {Average house price (log) } & &{}
+ 
+                       & Refusal rate & {Change rate of delay } & {Share votes of Labour} & {Population density}\\ 
+\hline
+                & 1.222***   & -0.095           & -1.672***  &        \\
+                                    & (0.28)     & (0.066)               & (0.328)      &        \\
+\hline
+Observations                        & 945                   & 945                    & 945    &               \\
+R2                                           & 0.694               &        0.672         &   0.695   &                 \\
+F (excluded instruments)     & 19.42***     &          2.07              &     46.32***       &           \\
+\bottomrule
+\end{tabular}}
+\begin{tablenotes}
+      \scriptsize
+      \item {\it{Notes}}: All regressions include the following controls. Share of people 85+, 
+      Share of people receiving Attendance Allowance, Share of people with pension credits, 
+      Share of females claiming for Job Seekers Allowance, Share of adults with income 
+      support, 
+      Herfindahl-Hirschmann Index, share of Labour voters for 2015. All regressions include fixed effect controls at
+      county level. Robust standard errors in parentheses. Standard errors are clustered at local planning 
+      authority level. ***/**/*/$^{+}$ denote significance levels at 1\%, 5\%, 
+      10\% and 15\%. Standard errors are presented in parentheses. 
+    \end{tablenotes}
+\end{table}
+
+
+\newpage
+\bibliographystyle{apalike}
+\bibliography{ex1}
+%remember to use \citep{} for citation
+%
+\newpage
+\end{document}

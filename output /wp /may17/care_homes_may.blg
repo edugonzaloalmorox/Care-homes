@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: care_homes_may.aux
+The style file: apalike.bst
+Database file #1: chap1.bib
+Warning--entry type for "corbett2015" isn't style-file defined
+--line 96 of file chap1.bib
+Repeated entry---line 187 of file chap1.bib
+ : @misc{jarret2017
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 614 of file chap1.bib
+ : @article{forder2011
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in cheshire2009
+Warning--empty journal in forder2011
+Warning--empty journal in hilber2015
+Warning--empty journal in hilber2016housingpolicies
+You've used 40 entries,
+            1935 wiz_defined-function locations,
+            705 strings with 10337 characters,
+and the built_in function-call counts, 14971 in all, are:
+= -- 1518
+> -- 527
+< -- 34
++ -- 192
+- -- 168
+* -- 1204
+:= -- 2598
+add.period$ -- 114
+call.type$ -- 40
+change.case$ -- 287
+chr.to.int$ -- 40
+cite$ -- 44
+duplicate$ -- 585
+empty$ -- 1037
+format.name$ -- 243
+if$ -- 2917
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 34
+newline$ -- 197
+num.names$ -- 120
+pop$ -- 214
+preamble$ -- 1
+purify$ -- 283
+quote$ -- 0
+skip$ -- 494
+stack$ -- 0
+substring$ -- 1121
+swap$ -- 84
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 238
+warning$ -- 4
+while$ -- 129
+width$ -- 0
+write$ -- 500
+(There were 2 error messages)

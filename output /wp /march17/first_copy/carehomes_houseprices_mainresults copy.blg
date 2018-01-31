@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: carehomes_houseprices_mainresults copy.aux
+The style file: apalike.bst
+Database file #1: ex1.bib
+Repeated entry---line 396 of file ex1.bib
+ : @article{forder2011
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in cheshire2009
+Warning--empty journal in forder2011
+Warning--empty journal in hilber2015
+Warning--empty journal in hilber2016housingpolicies
+You've used 19 entries,
+            1935 wiz_defined-function locations,
+            590 strings with 7095 characters,
+and the built_in function-call counts, 7195 in all, are:
+= -- 714
+> -- 273
+< -- 15
++ -- 96
+- -- 88
+* -- 602
+:= -- 1258
+add.period$ -- 53
+call.type$ -- 19
+change.case$ -- 138
+chr.to.int$ -- 19
+cite$ -- 23
+duplicate$ -- 272
+empty$ -- 498
+format.name$ -- 126
+if$ -- 1386
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 19
+newline$ -- 94
+num.names$ -- 57
+pop$ -- 111
+preamble$ -- 1
+purify$ -- 138
+quote$ -- 0
+skip$ -- 223
+stack$ -- 0
+substring$ -- 529
+swap$ -- 28
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 114
+warning$ -- 4
+while$ -- 61
+width$ -- 0
+write$ -- 234
+(There was 1 error message)

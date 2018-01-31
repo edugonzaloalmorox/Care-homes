@@ -1,0 +1,167 @@
+---
+title: "tables"
+author: "Edu Gonzalo Almorox"
+date: "5/7/2017"
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Tables 
+
+```{r }
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-lqy6{text-align:right;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"></th>
+    <th class="tg-lqy6">Obs</th>
+    <th class="tg-lqy6">Mean</th>
+    <th class="tg-lqy6">Minimum</th>
+    <th class="tg-lqy6">Maximum</th>
+    <th class="tg-lqy6">St.Dev</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Care homes per 1000 population over 65</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">1.6678</td>
+    <td class="tg-lqy6">0.4255</td>
+    <td class="tg-lqy6">4.0611</td>
+    <td class="tg-lqy6">0.5416</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Average house prices</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">268564</td>
+    <td class="tg-lqy6">91157</td>
+    <td class="tg-lqy6">2170757</td>
+    <td class="tg-lqy6">179558</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Share of population 85+</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.0025</td>
+    <td class="tg-lqy6">0.0002</td>
+    <td class="tg-lqy6">0.0122</td>
+    <td class="tg-lqy6">0.0016</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Share of population receiving Attendance Allowance</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.0106</td>
+    <td class="tg-lqy6">0.0043</td>
+    <td class="tg-lqy6">0.0263</td>
+    <td class="tg-lqy6">0.0039</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Share of population with pension credits</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.0339</td>
+    <td class="tg-lqy6">0.0130</td>
+    <td class="tg-lqy6">0.0705</td>
+    <td class="tg-lqy6">0.0100</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Share of female claiming `for` JSA</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.0047</td>
+    <td class="tg-lqy6">0.0007</td>
+    <td class="tg-lqy6">0.0185</td>
+    <td class="tg-lqy6">0.0032</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Share of population with income support</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.0122</td>
+    <td class="tg-lqy6">0.0028</td>
+    <td class="tg-lqy6">0.0402</td>
+    <td class="tg-lqy6">0.0059</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">HHI</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.0320</td>
+    <td class="tg-lqy6">0.0064</td>
+    <td class="tg-lqy6">0.4873</td>
+    <td class="tg-lqy6">0.0352</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Share of Labour voters 2015</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.2810</td>
+    <td class="tg-lqy6">0.0698</td>
+    <td class="tg-lqy6">0.7301</td>
+    <td class="tg-lqy6">0.1448</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Rate of refusal major projects</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.2563</td>
+    <td class="tg-lqy6">0.0732</td>
+    <td class="tg-lqy6">0.5090</td>
+    <td class="tg-lqy6">0.0879</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Rate of delay change</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">-0.0376</td>
+    <td class="tg-lqy6">-0.6345</td>
+    <td class="tg-lqy6">0.5310</td>
+    <td class="tg-lqy6">0.2197</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Historical share of Labour voters</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.1625</td>
+    <td class="tg-lqy6">0.0010</td>
+    <td class="tg-lqy6">0.4103</td>
+    <td class="tg-lqy6">0.0886</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Proportion of care homes (bad quality)</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.1905</td>
+    <td class="tg-lqy6">0.0000</td>
+    <td class="tg-lqy6">0.6585</td>
+    <td class="tg-lqy6">0.1232</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Proportion of care homes (outstanding quality)</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.004095</td>
+    <td class="tg-lqy6">0.0000</td>
+    <td class="tg-lqy6">0.0870</td>
+    <td class="tg-lqy6">0.012</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Proportion of developed land</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">0.2729</td>
+    <td class="tg-lqy6">0.0090</td>
+    <td class="tg-lqy6">0.9621</td>
+    <td class="tg-lqy6">0.2356</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Population density `in` 1911</td>
+    <td class="tg-lqy6">945</td>
+    <td class="tg-lqy6">774.7089</td>
+    <td class="tg-lqy6">3.2504</td>
+    <td class="tg-lqy6">22028.7969</td>
+    <td class="tg-lqy6">2633.3879</td>
+  </tr>
+</table>
+
+
+```
+
+

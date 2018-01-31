@@ -1,0 +1,237 @@
+\documentclass[11pt,a4paper,]{article}
+\usepackage[]{kpfonts}
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{unicode=true,
+            pdftitle={The effect of house prices on entry in the market of long term care: Evidence from England},
+            pdfauthor={Eduardo Gonzalo-Almorox; Nils Braakmann; Volodymyr Bilotkach; John Wildman; (Newcastle University Business School); (Preliminary version. Please do not cite)},
+            colorlinks=true,
+            linkcolor=blue,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[style=authoryear-comp]{biblatex}
+
+\addbibresource{ex.bib}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{The effect of house prices on entry in the market of long term care:
+Evidence from England}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{Eduardo Gonzalo-Almorox \\ Nils Braakmann \\ Volodymyr Bilotkach \\ John Wildman \\ (Newcastle University Business School) \\ (Preliminary version. Please do not cite)}
+  \preauthor{\centering\large\emph}
+  \postauthor{\par}
+  \predate{\centering\large\emph}
+  \postdate{\par}
+  \date{March 2017}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+This study investigates the effects of house prices in the English care homes market. High house prices, as experienced currently in England, may disincentive the entry in certain markets restricting the access to long term care services in these areas. Alternatively, these areas may also suppose business opportunity. We provide evidence in order to disentangle these effects. Our results suggest that higher house prices increase the rate care homes. Based on unique dataset that collates information from several sources our analysis exploits planning regulations to address empirical limitations associated with the house prices. Our findings contribute to inform policy makers about the relationship between the long term care and housing markets. 
+
+ 
+\end{abstract}
+
+\textbf{JEL Codes}: I11, L22, R31, C26
+
+\newpage
+
+\section{Introduction}\label{introduction}
+
+England has experienced the fastest growth in house prices amongst all
+OECD country during the last decades. This inflationary trend has had
+consequences for both households, materialised in the so called ``house
+affordability crisis'', and to less extent businesses. In this paper we
+investigate the relationship between the house prices and the market
+structure of an industry that typically operates with low margins, the
+care homes that provide long term care services. Our interest in the
+long term care is not trivial. Elements such as the ageing of the
+population or some socioeconomic changes that include the inclusion of
+more women in the labour force as well as the composition of different
+family structures, have shifted informal caregiving towards more formal
+long term care provision. These patterns evidence the importance of this
+sector in the forthcoming decades. Yet, despite the will of policy
+makers to design policies that preserve a sustainable provision of long
+term care and that also ensure competitive market structures, there is
+limited evidence for the design of these policies. We aim at informing
+these policies by analysing the extent of the effect of high prices in
+the housing market on the entries in the market of care homes.
+
+A major characteristic of the English market for long term care services
+consists of the geographical disparities in the levels of provision and
+funding and the consequent effects on other variables of interest for
+the market structure. Forder and Fernández (2012) analysing data at
+local level, highlight the substantial differences in both the level of
+need and the unit costs across English councils. This spatial
+variability seems to appear also in other variables of interest such as
+the levels of social care expenditure (Fernández and Forder (2015)).
+According to these authors, a principal element to explain this local
+divergences are the underlying conditions that providers face for
+supplying their services. Considering this, we argue that an element
+that may influence the structure of the market for long term care
+services concerns the situation relative to the housing market. Alike
+the former, the housing market in England also presents notable
+divergences across local areas that lead to different levels of prices.
+Several authors have argued that this is a direct consequence of the
+different designs associated with the planning regulations across the
+country. Hence, more restrictive planning regulations result in higher
+levels of house prices (see for instance, Cheshire (2009) or Hilber and
+Vermeulen (2016) for comprehensive reviews).
+
+The effect of house prices on the market entry of care homes is a priori
+uncertain. One possible explanation may consist of the influence of
+house prices as a cost for running a care home. Hence, high house prices
+may suppose an important barrier that can restrict the entry in certain
+markets. A potential consequence derived from the former, people living
+in these areas may find less long term care choices closer to them. A
+second argument may be on the basis of how high house prices may
+represent a business opportunity. The segment of the population that
+benefits from current upward trend in the house prices are those elderly
+homeowners that are able to monetize the higher value of their asset by
+selling their houses and moving out cheaper areas (Hilber and Schöni,
+2016). If this argument holds, areas with higher prices may be
+associated with greater levels of affluence and consequently greater
+proportions of clients that are more willing to pay for the services of
+a care home. Although the latter may contribute to preserve the
+financial viability of care homes in the market, an issue that
+constitutes a current public policy concern, it may also result in an
+unequal distribution of long term care across different areas in England
+where the most affluent areas are more benefited from a greater supply
+of home care services.
+
+In order to proceed with our analysis, we construct a unique dataset
+that merges information from several sources to collate information
+regarding the characteristics of the dynamics in the care homes market,
+the housing markets and the planning regulations. The dataset captures
+information regarding local authorities at different level (e.g.~street,
+district and county level). A first technical hurdle concerning the
+dataset, consists of distinguishing de novo entries associated with
+providers that effectively produce a new activity. Secondly, there is an
+additional empirical caveat that we have to address with regards to
+effect of house price on care homes entries. It may be possible that
+care homes select markets that have high prices on a non-random basis
+due to unobservable variables. This sample selection bias may invalidate
+the estimates corresponding to the effects of house prices. In order to
+overcome these, we carry out and identification strategy which uses an
+instrumental variables approach that exploits the variability in the
+restrictiveness of planning regulations across English districts. Our
+identification relies on the assumption that changes in the planning
+requirements affect the entry of care homes in market through the levels
+of house prices. Our instrumental variables estimates indicate a
+positive relationship between the market entries and the house prices
+suggesting increases in the proportion of care homes of 0.21 when house
+prices increase by a 10\%. We then can argue that higher house prices
+lead to greater market entries. These results suggest that providers
+would be focusing on areas where there are more expensive houses.
+
+To the best of our knowledge, no previous studies have been undertaken
+to provide causal evidence with regards to the effects of housing prices
+in the context of entries in the market of care homes. This research
+also makes a number of contributions to several strands of the
+literature. It provides further evidence to the growing literature that
+analyses aspects associated with the market of care homes in England.
+Forder and Allan (2014) study the elements that determine the
+competition amongst care homes and assess the consequences of this
+competition in both prices and quality. Also Allan and Forder (2015)
+evaluate empirically the causes of market exits by investigating the
+effects of maintaining minimum standards in the quality of the service.
+We extend this literature by addressing issues referred to the entry of
+care homes in the market. Prior to this paper, only Machin et al (2003)
+have provided empirical evidence of factors affecting the market entry
+by analysing the effects of setting of a minimum wage. In addition to
+providing a more up to date evidence, this research uses a more
+extensive dataset provided by the regulator, the Care Quality Commission
+(CQC). Likewise, this research also extends the literature that studies
+the effects of the planning system and the high house prices in England
+using the care homes as a new sector for the analysis.
+
+The rest of the paper is organised as follows. In the next section we
+introduce the institutional framework corresponding to the organisation
+of the local authorities responsible for planning activities and long
+term care. In Section 3 we outline the details associated with the
+sources of data and the variables used. Section 4 describes the
+empirical model and section 5 present the results. Finally, the main
+conclusions of the paper are shown in section 6.
+
+\section{Institutional background}\label{institutional-background}
+
+In England planning and long term care are activities that are ruled and
+applied by local governments. The structure of these is nonetheless
+complex and entails different organizational levels, depending on the
+type of services that are regulated. In this section we outline the main
+characteristics of the local government in England considering the
+particular cases of planning regulations and long term care. This will
+help to understand the geography that we adopting for our empirical
+analysis.
+
+\subsection{The English market for long term
+care}\label{the-english-market-for-long-term-care}
+
+\printbibliography
+
+
+\end{document}

@@ -1,0 +1,3569 @@
+%0 
+%0 Journal Article
+%A Abraham, Jean; Gaynor, Martin & Vogt, William B.
+%D 2007
+%T Entry and competition in hospital markets
+%E 
+%B The Journal of Industrial Economics
+%C 
+%I Wiley Online Library
+%V 55
+%6
+%N 2
+%P 265-288
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F abraham2007
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A AgeUK
+%D 2017
+%T Briefing: Health and Care of Older People in England 2017
+%E 
+%B 
+%C 
+%I AgeUK
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F age2017
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Allan, Stephen & Forder, Julien
+%D 2012
+%T Care Markets in England. Lessons from Research
+%E 
+%B Personal Social Services Research Unit, University of Kent, Canterbury
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F allan2012
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Allan, Stephen & Forder, Julien
+%D 2015
+%T The determinants of care home closure
+%E 
+%B Health economics
+%C 
+%I Wiley Online Library
+%V 24
+%6
+%N S1
+%P 132-145
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F allan2015
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Audretsch, David B. & Fritsch, Michael
+%D 1994
+%T On the measurement of entry rates
+%E 
+%B Empirica
+%C 
+%I Springer
+%V 21
+%6
+%N 1
+%P 105-113
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F audretsch1994
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Barker, Kate & others
+%D 2004
+%T Barker review of housing supply
+%E 
+%B HM Treasury
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F barker2004barker
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Barron, David N. & West, Elizabeth
+%D 2017
+%T The quasi-market for adult residential care in the UK: Do for-profit, not-for-profit or public sector residential care and nursing homes provide better quality care?
+%E 
+%B Social Science \&amp; Medicine
+%C 
+%I Elsevier
+%V 179
+%6
+%N 
+%P 137-146
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F barron2017quasi
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Berry, Steven T.
+%D 1992
+%T Estimation of a Model of Entry in the Airline Industry
+%E 
+%B Econometrica: Journal of the Econometric Society
+%C 
+%I JSTOR
+%V 
+%6
+%N 
+%P 889-917
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F berry1992
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A Berry, Steven & Waldfogel, Joel
+%D 1996
+%T Free entry and social inefficiency in radio broadcasting
+%E 
+%B 
+%C 
+%I National Bureau of Economic Research
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F berry1996
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Bertrand, Marianne & Kramarz, Francis
+%D 2002
+%T Does entry regulation hinder job creation? Evidence from the French retail industry
+%E 
+%B the quarterly journal of economics
+%C 
+%I Oxford University Press
+%V 117
+%6
+%N 4
+%P 1369-1413
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F bertrand2002does
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Bolin, Kristian; Lindgren, Bjorn & Lundborg, Petter
+%D 2008
+%T Informal and formal care among single-living elderly in Europe
+%E 
+%B Health economics
+%C 
+%I Wiley Online Library
+%V 17
+%6
+%N 3
+%P 393-409
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F bolin2008informal
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Bramley, Glen
+%D 1998
+%T Measuring planning: indicators of planning restraint and its impact on housing land supply
+%E 
+%B Environment and Planning B: Planning and Design
+%C 
+%I SAGE Publications Sage UK: London, England
+%V 25
+%6
+%N 1
+%P 31-57
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F bramley1998
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Brekke, Kurt R.; Nuscheler, Robert & Rune Straume, Odd
+%D 2006
+%T Quality and location choices under price regulation
+%E 
+%B Journal of Economics \& Management Strategy
+%C 
+%I Wiley Online Library
+%V 15
+%6
+%N 1
+%P 207-227
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F brekke2006
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Brekke, Kurt R.; Siciliani, Luigi & Straume, Odd Rune
+%D 2010
+%T Price and quality in spatial competition
+%E 
+%B Regional Science and Urban Economics
+%C 
+%I Elsevier
+%V 40
+%6
+%N 6
+%P 471-480
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F brekke2010
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Bresnahan, Timothy F. & Reiss, Peter C.
+%D 1990
+%T Entry in monopoly market
+%E 
+%B The Review of Economic Studies
+%C 
+%I Oxford University Press
+%V 57
+%6
+%N 4
+%P 531-553
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F bresnahan1990
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Bresnahan, Timothy F. & Reiss, Peter C.
+%D 1991
+%T Entry and competition in concentrated markets
+%E 
+%B Journal of Political Economy
+%C 
+%I JSTOR
+%V 
+%6
+%N 
+%P 977-1009
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F bresnahan1991
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Generic
+%A Chamberlain, E. H.
+%D 1950
+%T 77ie Theory of Monopolistic Competition
+%E
+%B 
+%C
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 misc
+%4 
+%# 
+%$ 
+%F chamberlain1950
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Cheshire, Paul
+%D 2009
+%T Urban land markets and policy failures
+%E 
+%B 
+%C 
+%I Foresight, Department for Business Innovation and Skills
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F cheshire2009
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Cheshire, Paul C.; Hilber, Christian A. L. & Kaplanis, Ioannis
+%D 2014
+%T Land use regulation and productivity---land matters: evidence from a UK supermarket chain
+%E 
+%B Journal of Economic Geography
+%C 
+%I Oxford Univ Press
+%V 
+%6
+%N 
+%P lbu007
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F cheshire2014
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Cheshire, Paul; Hilber, Christian A. L. & Koster, Hans R. A.
+%D 2016
+%T Empty homes, longer commutes: the unintended consequences of more restrictive local planning
+%E 
+%B Working paper Spatial Economics Research Centre (SERC)
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F cheshire2016
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Coibion, Olivier; Einav, Liran & Hallak, Juan Carlos
+%D 2007
+%T Equilibrium demand elasticities across quality segments
+%E 
+%B International Journal of Industrial Organization
+%C 
+%I Elsevier
+%V 25
+%6
+%N 1
+%P 13-30
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F coibion2007
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Book
+%A Colombo, Francesca; Llena-Nozal, Ana; Mercier, Jerome & Tjadens, Frits
+%D 2011
+%T OECD Health Policy Studies Help Wanted? Providing and Paying for Long-Term Care: Providing and Paying for Long-Term Care
+%E 
+%B 
+%C 
+%I OECD Publishing
+%V 2011
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7 
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 book
+%4 
+%# 
+%$ 
+%F colombo2011
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Book
+%A Francesca, Colombo; Ana, Llena-Nozal; J\'e,r\^o,me, Mercier & Frits, Tjadens
+%D 2011
+%T OECD Health Policy Studies Help Wanted? Providing and Paying for Long-Term Care: Providing and Paying for Long-Term Care
+%E 
+%B 
+%C 
+%I OECD Publishing
+%V 2011
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7 
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 book
+%4 
+%# 
+%$ 
+%F colombo2011
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Generic
+%A Corbett, Julia
+%D 2015
+%T Affluent self-funders in the South driving care home operators away from the North
+%E
+%B 
+%C
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 Webpage
+%4 
+%# 
+%$ 
+%F corbett2015
+%K 
+%X 
+%Z 
+%U https://www.carehome.co.uk/news/article.cfm/id/1568598/affluent-self-funders-market-in-the-south-driving-care-home-operators-away-from-the-north
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Darton, Robin; Forder, Julien; Netten, Ann; Bebbington, Andrew; Holder, Jacquetta & Towers, Ann-Marie
+%D 2010
+%T Slicing up the pie: allocation of central government funding of care of older people
+%E 
+%B Social Policy \&amp; Administration
+%C 
+%I Wiley Online Library
+%V 44
+%6
+%N 5
+%P 529-553
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F darton2010slicing
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Book
+%A Fernandez, Jose-Luis; Forder, Julien & Knapp, Martin
+%D 2011
+%T Long-term care
+%E 
+%B 
+%C 
+%I Oxford University Press
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7 
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 book
+%4 
+%# 
+%$ 
+%F fernandez2011
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Fernandez, Jos\'e,-Luis & Forder, Julien
+%D 2015
+%T Local Variability in Long-Term Care Services: Local Autonomy, Exogenous Influences and Policy Spillovers
+%E 
+%B Health economics
+%C 
+%I Wiley Online Library
+%V 24
+%6
+%N S1
+%P 146-157
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F fernandez2015
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Forder, Julien & Fern\'a,ndez, Jos\'e,-Luis
+%D 2011
+%T Geographical differences in the provision of care home services in England
+%E 
+%B 
+%C 
+%I Personal Social Services Research Unit
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F forder2011
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Forder, Julien & Allan, Stephen
+%D 2011
+%T Competition in the English nursing homes market
+%E 
+%B Personal Social Services Research Unit
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F forder2011
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Forder, Julien & Allan, Stephen
+%D 2014
+%T The impact of competition on quality and prices in the English care homes market
+%E 
+%B Journal of Health Economics
+%C 
+%I Elsevier
+%V 34
+%6
+%N 
+%P 73-83
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F forder2014
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Gage, Heather; Knibb, Wendy; Evans, Joanne; Williams, Peter; Rickman, Neil & Bryan, Karen
+%D 2009
+%T Why are some care homes better than others? An empirical study of the factors associated with quality of care for older people in residential homes in Surrey, England
+%E 
+%B Health \& social care in the community
+%C 
+%I Wiley Online Library
+%V 17
+%6
+%N 6
+%P 599-609
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F gage2009
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A Gaynor, Martin & Town, Robert J.
+%D 2011
+%T Competition in health care markets
+%E 
+%B 
+%C 
+%I National Bureau of Economic Research
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F gaynor&town2011
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Geurts, Karen & Van Biesebroeck, Johannes
+%D 2016
+%T Firm creation and post-entry dynamics of de novo entrants
+%E 
+%B International Journal of Industrial Organization
+%C 
+%I Elsevier
+%V 49
+%6
+%N 
+%P 59-104
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F geurts2016firm
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Grabowski, David C.
+%D 2004
+%T A longitudinal study of Medicaid payment, private-pay price and nursing home quality
+%E 
+%B International journal of health care finance and economics
+%C 
+%I Springer
+%V 4
+%6
+%N 1
+%P 5-26
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F grabowski2004longitudinal
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Griffith, R. & Harmgart, H.
+%D 2008
+%T Supermarkets and planning regulation
+%E 
+%B CEPR Discussion Paper
+%C 
+%I 
+%V 6713
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F griffith2008
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A van Groenou, Marjolein I.  Broese & De Boer, Alice
+%D 2016
+%T Providing informal care in a changing society
+%E 
+%B European Journal of Ageing
+%C 
+%I Springer
+%V 13
+%6
+%N 3
+%P 271-279
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F groenou2016providing
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A Hancock, Ruth & Hviid, Morten
+%D 2010
+%T Buyer power and price discrimination: the case of the UK care homes market
+%E 
+%B 
+%C 
+%I ISER Working Paper Series
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F hancock2010
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Haskel, Jonathan & Sadun, Raffaella
+%D 2012
+%T Regulation and UK retailing productivity: evidence from microdata
+%E 
+%B Economica
+%C 
+%I Wiley Online Library
+%V 79
+%6
+%N 315
+%P 425-448
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F haskel2012
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A Henretty, Nigel
+%D 2017
+%T Housing affordability in England and Wales: 1997 to 2016
+%E 
+%B 
+%C 
+%I Office of National Statistics
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F henretty2017
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Hilber, Christian A. L. & Robert-Nicoud, Fr\'e,d\'e,ric
+%D 2013
+%T On the origins of land use regulations: Theory and evidence from US metro areas
+%E 
+%B Journal of Urban Economics
+%C 
+%I Elsevier
+%V 75
+%6
+%N 
+%P 29-43
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F hilber2013origins
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Hilber, Christian A. L.
+%D 2015
+%T UK Housing and Planning Policies: the evidence from economic research
+%E 
+%B 
+%C 
+%I Centre for Economic Performance, The London School of Economics and Political Science
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F hilber2015
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Hilber, Christian A. L. & Sch\"o,ni, Olivier
+%D 2016
+%T Housing Policies in Switzerland, the United Kingdom, and the United States
+%E 
+%B 
+%C 
+%I Asian Development Bank Institute
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F hilber2016housingpolicies
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Hilber, Christian A. L. & Vermeulen, Wouter
+%D 2016
+%T The Impact of Supply Constraints on House Prices in England
+%E 
+%B The Economic Journal
+%C 
+%I Wiley-Blackwell
+%V 126
+%6
+%N 591
+%P 358-405
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F hilber2016supply
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Generic
+%A Hilber, Christian A. L.
+%D 2017
+%T Britain's Housing Crisis: causes and cures
+%E
+%B 
+%C
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 Conference
+%4 
+%# 
+%$ 
+%F hilber2017
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Hiller, Norbert & Lerbs, Oliver W.
+%D 2016
+%T Aging and urban house prices
+%E 
+%B Regional Science and Urban Economics
+%C 
+%I Elsevier
+%V 60
+%6
+%N 
+%P 276-291
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F hiller2016aging
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Hirth, Richard A.; Zheng, Qing; Grabowski, David C.; Stevenson, David G.; Intrator, Orna & Banaszak-Holl, Jane
+%D 2017
+%T The Effects of Chains on the Measurement of Competition in the Nursing Home Industry
+%E 
+%B Medical Care Research and Review
+%C 
+%I SAGE Publications Sage CA: Los Angeles, CA
+%V 
+%6
+%N 
+%P 1077558717701771
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F hirth2017effects
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Book
+%A Hotelling, Harold
+%D 1929
+%T Stability in competition
+%E 
+%B 
+%C 
+%I Springer
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7 
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 book
+%4 
+%# 
+%$ 
+%F hotelling1929
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Humphries, Richard; Thorlby, Ruth; Holder, Holly; Hall, Patrick & Charles, Anna
+%D 2016
+%T Social care for older people: home truths
+%E 
+%B London, The King's Fund
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F humphries2016
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A Jarret, Tim
+%D 2017
+%T The care home market
+%E 
+%B 
+%C 
+%I The House of Commons Library
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F jarret2017
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Jarrett, Tim
+%D 2016
+%T Social care: Recent funding agreements and state of care homes
+%E 
+%B 
+%C 
+%I House of Commons Library
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F jarrett2016
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Kaschowitz, Judith & Brandt, Martina
+%D 2017
+%T Health effects of informal caregiving across Europe: A longitudinal approach
+%E 
+%B Social Science \&amp; Medicine
+%C 
+%I Elsevier
+%V 173
+%6
+%N 
+%P 72-80
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F kaschowitz2017health
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Le Grand, Julian
+%D 1991
+%T Quasi-markets and social policy
+%E 
+%B The Economic Journal
+%C 
+%I JSTOR
+%V 101
+%6
+%N 408
+%P 1256-1267
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F legrand1991quasi
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Le Grand, Julien
+%D 2016
+%T Delivering Britain ́s public services trhough ``quasi- markets'': what we have achieved so far?
+%E 
+%B Research in Public Policy
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F legrand2012
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Book
+%A Machin, Stephen; Manning, Alan & Rahman, Lupin
+%D 2002
+%T Where the minimum wage bites hard: the introduction of the UK national minimum wage to a low wage sector
+%E 
+%B 
+%C 
+%I Centre for Economic Performance, London School of Economics and Political Science
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7 
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 book
+%4 
+%# 
+%$ 
+%F machin2002minimum
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Machin, Stephen; Manning, Alan & Rahman, Lupin
+%D 2003
+%T Where the minimum wage bites hard: Introduction of minimum wages to a low wage sector
+%E 
+%B Journal of the European Economic Association
+%C 
+%I Wiley Online Library
+%V 1
+%6
+%N 1
+%P 154-180
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F machin2003
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Malley, Juliette
+%D 2010
+%T Measuring the quality of long-term care in England
+%E 
+%B Eurohealth
+%C 
+%I European Observatory on Health Systems and Policies
+%V 16
+%6
+%N 2
+%P 21-24
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F malley2010
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Mankiw, N.  Gregory & Whinston, Michael D.
+%D 1986
+%T Free entry and social inefficiency
+%E 
+%B The RAND Journal of Economics
+%C 
+%I JSTOR
+%V 
+%6
+%N 
+%P 48-58
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F mankiw1986
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Mankiw, N.  Gregory & Weil, David N.
+%D 1989
+%T The baby boom, the baby bust, and the housing market
+%E 
+%B Regional science and urban economics
+%C 
+%I Elsevier
+%V 19
+%6
+%N 2
+%P 235-258
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F mankiw1989baby
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Mazzeo, Michael J.
+%D 2002
+%T Product choice and oligopoly market structure
+%E 
+%B RAND Journal of Economics
+%C 
+%I JSTOR
+%V 
+%6
+%N 
+%P 221-242
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F mazzeo2002
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Miller, Nathan H. & Osborne, Matthew
+%D 2014
+%T Spatial differentiation and price discrimination in the cement industry: evidence from a structural model
+%E 
+%B The RAND Journal of Economics
+%C 
+%I Wiley Online Library
+%V 45
+%6
+%N 2
+%P 221-247
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F miller2014
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Mukamel, Dana B. & Spector, William D.
+%D 2002
+%T The competitive nature of the nursing home industry: price mark ups and demand elasticities
+%E 
+%B Applied Economics
+%C 
+%I Taylor \&amp; Francis
+%V 34
+%6
+%N 4
+%P 413-420
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F mukamel2002competitive
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A NAO
+%D 2014
+%T Adult social care in England: overview
+%E 
+%B 
+%C 
+%I National Audit Office
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F nao2014
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Netten, Ann; Darton, Robin & Williams, Jacquetta
+%D 2003
+%T Nursing home closures: effects on capacity and reasons for closure
+%E 
+%B Age and Ageing
+%C 
+%I Br Geriatrics Soc
+%V 32
+%6
+%N 3
+%P 332-337
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F netten2003
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Netten, Ann; Williams, Jacquetta & Darton, Robin
+%D 2005
+%T Care-home closures in England: causes and implications
+%E 
+%B Ageing and Society
+%C 
+%I Cambridge Univ Press
+%V 25
+%6
+%N 06
+%P 319-338
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F netten2005care
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A OFT
+%D 2005
+%T Care homes for Older People in the UK: A market study
+%E 
+%B 
+%C 
+%I Office of Fair Trading
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F oft2005
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A ONS
+%D 2016
+%T ONS Postcode Directory (ONSPD). August 2016
+%E 
+%B 
+%C 
+%I Office of National Statistics
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F ons2016
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Parente, Paulo M. D. C. & Silva, J. M. C.  Santos
+%D 2012
+%T A cautionary note on tests of overidentifying restrictions
+%E 
+%B Economics Letters
+%C 
+%I Elsevier
+%V 115
+%6
+%N 2
+%P 314-317
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F parente2012cautionary
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A Preston, Ian; Ridge, Michael; Wood, Sarah & others
+%D 1996
+%T The impact of the UK planning system on house prices
+%E 
+%B 
+%C 
+%I Economics and Finance Section, School of Social Sciences, Brunel University
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F preston1996
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Ratcliffe, Anita
+%D 2015
+%T Wealth effects, local area attributes, and economic prospects: On the relationship between house prices and mental wellbeing
+%E 
+%B Review of Income and Wealth
+%C 
+%I Wiley Online Library
+%V 61
+%6
+%N 1
+%P 75-92
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F ratcliffe2015wealth
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Rosenthal, Stuart S. & Strange, William C.
+%D 2004
+%T Evidence on the nature and sources of agglomeration economies
+%E 
+%B Handbook of regional and urban economics
+%C 
+%I Elsevier
+%V 4
+%6
+%N 
+%P 2119-2171
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F rosenthal2004evidence
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Sadun, Raffaella
+%D 2015
+%T Does planning regulation protect independent retailers?
+%E 
+%B Review of Economics and Statistics
+%C 
+%I MIT Press
+%V 97
+%6
+%N 5
+%P 983-1001
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F sadun2015
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Salop, Steven C.
+%D 1979
+%T Monopolistic competition with outside goods
+%E 
+%B The Bell Journal of Economics
+%C 
+%I JSTOR
+%V 
+%6
+%N 
+%P 141-156
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F salop1979
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A S\'a,nchez Vidal, Mar\'\i,a
+%D 2016
+%T Retail shocks and city structure
+%E 
+%B IEB Working Paper Series, 2016/12 
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F sanchezvidal2016
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Sargan, John D.
+%D 1958
+%T The estimation of economic relationships using instrumental variables
+%E 
+%B Econometrica: Journal of the Econometric Society
+%C 
+%I JSTOR
+%V 
+%6
+%N 
+%P 393-415
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F sargan1958estimation
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Seim, Katja
+%D 2006
+%T An empirical model of firm entry with endogenous product-type choices
+%E 
+%B The RAND Journal of Economics
+%C 
+%I Wiley Online Library
+%V 37
+%6
+%N 3
+%P 619-640
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F seim2006
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Book
+%A Shy, Oz
+%D 1995
+%T Industrial organization: theory and applications
+%E 
+%B 
+%C 
+%I MIT press
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7 
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 book
+%4 
+%# 
+%$ 
+%F shy1995
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Siciliani, Luigi
+%D 2013
+%T The economics of long-term care
+%E 
+%B The BE Journal of Economic Analysis \& Policy
+%C 
+%I 
+%V 14
+%6
+%N 2
+%P 343-375
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F siciliani2013
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Generic
+%A Stock, James H. & Yogo, Motohiro
+%D 2005
+%T Testing for weak instruments in linear IV regression. Chapter 5 in Identification and Inference in Econometric Models: Essays in Honor of Thomas J. Rothenberg, edited by DWK Andrews and JH Stock
+%E
+%B 
+%C
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 misc
+%4 
+%# 
+%$ 
+%F stock2005
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Report
+%A Tak\'a,ts, El\Ho,,d
+%D 2010
+%T Ageing and Asset Prices, Bank for International Settlements
+%E 
+%B 
+%C 
+%I Working Papers
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9 
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 techreport
+%4 
+%# 
+%$ 
+%F takats2010ageing
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Book
+%A Tirole, Jean
+%D 1988
+%T The theory of industrial organization
+%E 
+%B 
+%C 
+%I MIT press
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7 
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 book
+%4 
+%# 
+%$ 
+%F tirole1988
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Tokunaga, Mutsumi & Hashimoto, Hideki
+%D 2013
+%T Factors affecting the entry of for-profit providers into a price regulated market for formal long-term care services: A case study from Japan
+%E 
+%B Social Science and Medicine
+%C 
+%I Elsevier
+%V 76
+%6
+%N 
+%P 143-149
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F tokunaga2013factors
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Van Houtven, Courtney Harold & Norton, Edward C.
+%D 2008
+%T Informal care and Medicare expenditures: testing for heterogeneous treatment effects
+%E 
+%B Journal of health economics
+%C 
+%I Elsevier
+%V 27
+%6
+%N 1
+%P 134-156
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F van2008informal
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Generic
+%A Skills for Care,
+%D 2016
+%T The state of the adult social care sector and workforce in England
+%E
+%B 
+%C
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 misc
+%4 
+%# 
+%$ 
+%F workforce2016
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
