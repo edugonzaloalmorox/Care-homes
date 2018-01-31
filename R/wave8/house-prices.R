@@ -74,6 +74,7 @@ prices_mean_oslaua = prices_complete %>%
 england = prices_mean_oslaua %>% 
   filter(str_detect(oslaua, "^E"))
 
+
 write.csv(england, "/Users/Personas/Dropbox/PhD/ch1/market entry/care_homes/data/waves/eight/house_prices_oslaua_year.csv", row.names = FALSE)
 
 

@@ -78,7 +78,15 @@ qual_info = function(x){
         tally() %>%
         arrange(latest_rating, oslaua, year_reg)
       
-      write.csv(quality_oslaua, "/Users/Personas/Dropbox/PhD/ch1/market entry/care_homes/data/waves/eight/quality_oslaua.csv", row.names = FALSE)
+      quality_wide = quality_oslaua %>% spread(latest_rating, n)
+      quality_wide = clean_names(quality_wide)
+      
+      quality_wide = quality_wide %>% 
+        replace_na(list(good = 0, inadequate = 0, outstanding = 0, requires_improvement = 0)) 
+  
+      
+      
+      write.csv(quality_wide, "/Users/Personas/Dropbox/PhD/ch1/market entry/care_homes/data/waves/eight/quality_oslaua.csv", row.names = FALSE)
       
       
 

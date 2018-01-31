@@ -168,4 +168,28 @@ mutate(entry_rates = entries/lag(care_homes_incumbent)) %>%
 write.csv(df_complete_test, "/Users/Personas/Dropbox/PhD/ch1/market entry/care_homes/data/waves/eight/care_homes_complete_sample.csv", row.names = FALSE )
 
 
+# ---------
+# QUALITY 
+# --------
+
+quality_care_homes = import("/Users/Personas/Dropbox/PhD/ch1/market entry/care_homes/data/waves/eight/quality_oslaua.csv")
+care_homes_complete = import("/Users/Personas/Dropbox/PhD/ch1/market entry/care_homes/data/waves/eight/care_homes_complete_sample.csv")
+
+care_homes2014 = care_homes_complete %>%
+  filter(years %in% c(2014, 2015, 2016, 2017))
+
+df_complete_test = left_join(care_homes2014, quality_care_homes, by = c("oslauas" = "oslaua",
+                                                             "years" = "year_reg"))
+
+df_complete_test = df_complete_test %>% 
+  replace_na(list(good = 0, inadequate = 0, outstanding = 0, requires_improvement = 0)) 
+
+df_complete_test = df_complete_test %>% 
+  mutate(good_pop = (good/population_65over)*1000,
+         inadequate_pop = (inadequate/population_65over)*1000,
+         outstanding_pop = (outstanding/population_65over)*1000,
+         improvement_pop = (requires_improvement/population_65over)*1000)
+
+
+write.csv(df_complete_test, "/Users/Personas/Dropbox/PhD/ch1/market entry/care_homes/data/waves/eight/care_homes_partial_sample_quality.csv", row.names = FALSE )
 
